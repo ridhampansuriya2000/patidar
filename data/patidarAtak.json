@@ -1,63 +1,3347 @@
 {
   "leuvaPatel": [
-    {"id":"leuva-001","gujarati":"અખાણી","english":"Akhani","hindi":"अखानी"},
-    {"id":"leuva-002","gujarati":"અંબાણી","english":"Ambani","hindi":"अंबानी"},
-    {"id":"leuva-003","gujarati":"અમીન","english":"Amin","hindi":"अमीन"},
-    {"id":"leuva-004","gujarati":"અણઘણ","english":"Anaghan","hindi":"अनघन"},
-    {"id":"leuva-005","gujarati":"અડાલજા","english":"Adalaja","hindi":"अडालजा"},
-    {"id":"leuva-006","gujarati":"આચાર્ય","english":"Acharya","hindi":"आचार्य"},
-    {"id":"leuva-007","gujarati":"આંબાવત","english":"Ambavat","hindi":"आंबावत"},
-    {"id":"leuva-008","gujarati":"આરદાણી","english":"Ardani","hindi":"आरदाणी"},
-    {"id":"leuva-009","gujarati":"આસોદરિયા","english":"Asodariya","hindi":"आसोदरिया"},
-    {"id":"leuva-010","gujarati":"આંબલિયા","english":"Ambaliya","hindi":"आंबलिया"},
-    {"id":"leuva-011","gujarati":"કણસાગરા","english":"Kansagara","hindi":"कणसागरा"},
-    {"id":"leuva-012","gujarati":"કાપડિયા","english":"Kapadiya","hindi":"कापड़िया"},
-    {"id":"leuva-013","gujarati":"કટારિયા","english":"Katariya","hindi":"कटारिया"},
-    {"id":"leuva-014","gujarati":"કણબાર","english":"Kanbar","hindi":"कणबार"},
-    {"id":"leuva-015","gujarati":"કોઠારી","english":"Kothari","hindi":"कोठारी"},
-    {"id":"leuva-016","gujarati":"કુંડારિયા","english":"Kundariya","hindi":"कुंडारिया"},
-    {"id":"leuva-017","gujarati":"કેસરિયા","english":"Kesariya","hindi":"केसरिया"},
-    {"id":"leuva-018","gujarati":"કરડ","english":"Karad","hindi":"करड"},
-    {"id":"leuva-019","gujarati":"ખાચર","english":"Khachar","hindi":"खाचर"},
-    {"id":"leuva-020","gujarati":"ખોડલિયા","english":"Khodaliya","hindi":"खोडलिया"},
-    {"id":"leuva-021","gujarati":"ગઢવી","english":"Gadhvi","hindi":"गढवी"},
-    {"id":"leuva-022","gujarati":"ગજેરા","english":"Gajera","hindi":"गजेरा"},
-    {"id":"leuva-023","gujarati":"ગોળવાળિયા","english":"Golvaliya","hindi":"गोलवालिया"},
-    {"id":"leuva-024","gujarati":"ગોહિલ","english":"Gohil","hindi":"गोहील"},
-    {"id":"leuva-025","gujarati":"ચાવડા","english":"Chavda","hindi":"चावड़ा"},
-    {"id":"leuva-026","gujarati":"ચૌહાણ","english":"Chauhan","hindi":"चौहान"},
-    {"id":"leuva-027","gujarati":"જાડેજા","english":"Jadeja","hindi":"जाडेजा"},
-    {"id":"leuva-028","gujarati":"જોશી","english":"Joshi","hindi":"जोशी"},
-    {"id":"leuva-029","gujarati":"ડાભી","english":"Dabhi","hindi":"डाभी"},
-    {"id":"leuva-030","gujarati":"ડોડીયા","english":"Dodiya","hindi":"डोडिया"},
-    {"id":"leuva-031","gujarati":"તલાટી","english":"Talati","hindi":"तलाटी"},
-    {"id":"leuva-032","gujarati":"દેસાઈ","english":"Desai","hindi":"देसाई"},
-    {"id":"leuva-033","gujarati":"ધોળકિયા","english":"Dholakiya","hindi":"धोलकिया"},
-    {"id":"leuva-034","gujarati":"નાણાવટી","english":"Nanavati","hindi":"नाणावटी"},
-    {"id":"leuva-035","gujarati":"નાયક","english":"Nayak","hindi":"नायक"},
-    {"id":"leuva-036","gujarati":"પટેલ","english":"Patel","hindi":"पटेल"},
-    {"id":"leuva-037","gujarati":"પટાડિયા","english":"Patadiya","hindi":"पटाडिया"},
-    {"id":"leuva-038","gujarati":"પારેખ","english":"Parekh","hindi":"पारेख"},
-    {"id":"leuva-039","gujarati":"પંડ્યા","english":"Pandya","hindi":"पंड्या"},
-    {"id":"leuva-040","gujarati":"પરમાર","english":"Parmar","hindi":"परमार"},
-    {"id":"leuva-041","gujarati":"બારોટ","english":"Barot","hindi":"बारोट"},
-    {"id":"leuva-042","gujarati":"બોરીચા","english":"Boricha","hindi":"बोरिचा"},
-    {"id":"leuva-043","gujarati":"ભટ્ટ","english":"Bhatt","hindi":"भट्ट"},
-    {"id":"leuva-044","gujarati":"ભાલાળા","english":"Bhalala","hindi":"भालाला"},
-    {"id":"leuva-045","gujarati":"મકવાણા","english":"Makwana","hindi":"मकवाणा"},
-    {"id":"leuva-046","gujarati":"માણસિયા","english":"Mansiya","hindi":"मानसिया"},
-    {"id":"leuva-047","gujarati":"મોરડિયા","english":"Moradiya","hindi":"मोरडिया"},
-    {"id":"leuva-048","gujarati":"મોઢવાડિયા","english":"Modhwadia","hindi":"मोढवाडिया"},
-    {"id":"leuva-049","gujarati":"રાઠોડ","english":"Rathod","hindi":"राठोड"},
-    {"id":"leuva-050","gujarati":"રાવલ","english":"Raval","hindi":"रावल"},
-    {"id":"leuva-051","gujarati":"રાઠવા","english":"Rathva","hindi":"राठवा"},
-    {"id":"leuva-052","gujarati":"સોલંકી","english":"Solanki","hindi":"सोलंकी"},
-    {"id":"leuva-053","gujarati":"સાવલિયા","english":"Savaliya","hindi":"सावलिया"},
-    {"id":"leuva-054","gujarati":"સાંગાણી","english":"Sangani","hindi":"सांगाणी"},
-    {"id":"leuva-055","gujarati":"શેખ","english":"Shekh","hindi":"शेख"},
-    {"id":"leuva-056","gujarati":"શિયાણી","english":"Shiyani","hindi":"शियाणी"},
-    {"id":"leuva-057","gujarati":"હડિયા","english":"Hadiya","hindi":"हडिया"},
-    {"id":"leuva-058","gujarati":"હિરપરા","english":"Hirpara","hindi":"हिरपरा"}
+    {
+      "id": "leuva-001",
+      "gujarati": "કરકર",
+      "english": "Karakara",
+      "hindi": "करकर"
+    },
+    {
+      "id": "leuva-002",
+      "gujarati": "ક્યાડા",
+      "english": "Kyada",
+      "hindi": "क्याडा"
+    },
+    {
+      "id": "leuva-003",
+      "gujarati": "કરસાળા",
+      "english": "Karasala",
+      "hindi": "करसाळा"
+    },
+    {
+      "id": "leuva-004",
+      "gujarati": "કડકિયા",
+      "english": "Kadakiya",
+      "hindi": "कडकिया"
+    },
+    {
+      "id": "leuva-005",
+      "gujarati": "કનકોટિયા",
+      "english": "Kanakotiya",
+      "hindi": "कनकोटिया"
+    },
+    {
+      "id": "leuva-006",
+      "gujarati": "કહોદરિયા",
+      "english": "Kahodariya",
+      "hindi": "कहोदरिया"
+    },
+    {
+      "id": "leuva-007",
+      "gujarati": "કથિરીયા",
+      "english": "Kathiriya",
+      "hindi": "कथिरीया"
+    },
+    {
+      "id": "leuva-008",
+      "gujarati": "કસવાળા",
+      "english": "Kasavala",
+      "hindi": "कसवाळा"
+    },
+    {
+      "id": "leuva-009",
+      "gujarati": "કરેડ",
+      "english": "Kareda",
+      "hindi": "करेड"
+    },
+    {
+      "id": "leuva-010",
+      "gujarati": "કમાલી",
+      "english": "Kamali",
+      "hindi": "कमाली"
+    },
+    {
+      "id": "leuva-011",
+      "gujarati": "કડીવાર",
+      "english": "Kadivara",
+      "hindi": "कडीवार"
+    },
+    {
+      "id": "leuva-012",
+      "gujarati": "કગેળીયા",
+      "english": "Kageliya",
+      "hindi": "कगेळीया"
+    },
+    {
+      "id": "leuva-013",
+      "gujarati": "કાનાણી ડવા",
+      "english": "Kanani Dava",
+      "hindi": "कानाणी डवा"
+    },
+    {
+      "id": "leuva-014",
+      "gujarati": "કાવાર્ણ કાછડિયા",
+      "english": "Kavarna Kachhadiya",
+      "hindi": "कावार्ण काछडिया"
+    },
+    {
+      "id": "leuva-015",
+      "gujarati": "કાકડિયા",
+      "english": "Kakadiya",
+      "hindi": "काकडिया"
+    },
+    {
+      "id": "leuva-016",
+      "gujarati": "કાપડિયા",
+      "english": "Kapadiya",
+      "hindi": "कापडिया"
+    },
+    {
+      "id": "leuva-017",
+      "gujarati": "કાયરોટિયા",
+      "english": "Kayarotiya",
+      "hindi": "कायरोटिया"
+    },
+    {
+      "id": "leuva-018",
+      "gujarati": "કાત્રોડિયા",
+      "english": "Katrodiya",
+      "hindi": "कात्रोडिया"
+    },
+    {
+      "id": "leuva-019",
+      "gujarati": "કાનપરિધા",
+      "english": "Kanaparidha",
+      "hindi": "कानपरिधा"
+    },
+    {
+      "id": "leuva-020",
+      "gujarati": "કિકાણી",
+      "english": "Kikani",
+      "hindi": "किकाणी"
+    },
+    {
+      "id": "leuva-021",
+      "gujarati": "કકાણી",
+      "english": "Kakani",
+      "hindi": "ककाणी"
+    },
+    {
+      "id": "leuva-022",
+      "gujarati": "કાયાણી",
+      "english": "Kayani",
+      "hindi": "कायाणी"
+    },
+    {
+      "id": "leuva-023",
+      "gujarati": "કુર્જાદયા",
+      "english": "Kurjadaya",
+      "hindi": "कुर्जादया"
+    },
+    {
+      "id": "leuva-024",
+      "gujarati": "કુંમાણી",
+      "english": "Kunmani",
+      "hindi": "कुंमाणी"
+    },
+    {
+      "id": "leuva-025",
+      "gujarati": "ડેશાણી",
+      "english": "Deshani",
+      "hindi": "डेशाणी"
+    },
+    {
+      "id": "leuva-026",
+      "gujarati": "કેસાદરિષા",
+      "english": "Kesadarisha",
+      "hindi": "केसादरिषा"
+    },
+    {
+      "id": "leuva-027",
+      "gujarati": "કોટડિયા",
+      "english": "Kotadiya",
+      "hindi": "कोटडिया"
+    },
+    {
+      "id": "leuva-028",
+      "gujarati": "કોરાટ",
+      "english": "Korata",
+      "hindi": "कोराट"
+    },
+    {
+      "id": "leuva-029",
+      "gujarati": "કોલાડિયા",
+      "english": "Koladiya",
+      "hindi": "कोलाडिया"
+    },
+    {
+      "id": "leuva-030",
+      "gujarati": "કોરડિયા",
+      "english": "Koradiya",
+      "hindi": "कोरडिया"
+    },
+    {
+      "id": "leuva-031",
+      "gujarati": "કોઠારી",
+      "english": "Kothari",
+      "hindi": "कोठारी"
+    },
+    {
+      "id": "leuva-032",
+      "gujarati": "કોઠિયા",
+      "english": "Kothiya",
+      "hindi": "कोठिया"
+    },
+    {
+      "id": "leuva-033",
+      "gujarati": "કોચાણી",
+      "english": "Kochani",
+      "hindi": "कोचाणी"
+    },
+    {
+      "id": "leuva-034",
+      "gujarati": "કોઇલિયા",
+      "english": "Koiliya",
+      "hindi": "कोइलिया"
+    },
+    {
+      "id": "leuva-035",
+      "gujarati": "કોરિયા",
+      "english": "Koriya",
+      "hindi": "कोरिया"
+    },
+    {
+      "id": "leuva-036",
+      "gujarati": "કાજાવદરા",
+      "english": "Kajavadara",
+      "hindi": "काजावदरा"
+    },
+    {
+      "id": "leuva-037",
+      "gujarati": "કર થિા",
+      "english": "Kara Thi",
+      "hindi": "कर थिा"
+    },
+    {
+      "id": "leuva-038",
+      "gujarati": "કંટાળિવા",
+      "english": "Kntaliva",
+      "hindi": "कंटाळिवा"
+    },
+    {
+      "id": "leuva-039",
+      "gujarati": "કુરિયા",
+      "english": "Kuriya",
+      "hindi": "कुरिया"
+    },
+    {
+      "id": "leuva-040",
+      "gujarati": "ખડસંધરા",
+      "english": "Khadasndhara",
+      "hindi": "खडसंधरा"
+    },
+    {
+      "id": "leuva-041",
+      "gujarati": "ખાચરિયા",
+      "english": "Khachariya",
+      "hindi": "खाचरिया"
+    },
+    {
+      "id": "leuva-042",
+      "gujarati": "ખાતરા",
+      "english": "Khatara",
+      "hindi": "खातरा"
+    },
+    {
+      "id": "leuva-043",
+      "gujarati": "ખાતરોજા",
+      "english": "Khataroja",
+      "hindi": "खातरोजा"
+    },
+    {
+      "id": "leuva-044",
+      "gujarati": "ખિમાણી",
+      "english": "Khimani",
+      "hindi": "खिमाणी"
+    },
+    {
+      "id": "leuva-045",
+      "gujarati": "બીટાડિયા",
+      "english": "Bitadiya",
+      "hindi": "बीटाडिया"
+    },
+    {
+      "id": "leuva-046",
+      "gujarati": "ખૂંટ",
+      "english": "Khunta",
+      "hindi": "खूंट"
+    },
+    {
+      "id": "leuva-047",
+      "gujarati": "ખેતાભી",
+      "english": "Khetabhi",
+      "hindi": "खेताभी"
+    },
+    {
+      "id": "leuva-048",
+      "gujarati": "ખેની",
+      "english": "Kheni",
+      "hindi": "खेनी"
+    },
+    {
+      "id": "leuva-049",
+      "gujarati": "ખોખાણી",
+      "english": "Khokhani",
+      "hindi": "खोखाणी"
+    },
+    {
+      "id": "leuva-050",
+      "gujarati": "ખડસંચા",
+      "english": "Khadasncha",
+      "hindi": "खडसंचा"
+    },
+    {
+      "id": "leuva-051",
+      "gujarati": "ખં દેલા",
+      "english": "Khn Dela",
+      "hindi": "खं देला"
+    },
+    {
+      "id": "leuva-052",
+      "gujarati": "ગરસુદિયા",
+      "english": "Garasudiya",
+      "hindi": "गरसुदिया"
+    },
+    {
+      "id": "leuva-053",
+      "gujarati": "ગપેસરિયા",
+      "english": "Gapesariya",
+      "hindi": "गपेसरिया"
+    },
+    {
+      "id": "leuva-054",
+      "gujarati": "ગરાળીયા",
+      "english": "Garaliya",
+      "hindi": "गराळीया"
+    },
+    {
+      "id": "leuva-055",
+      "gujarati": "ગળષરિયો",
+      "english": "Galashariyo",
+      "hindi": "गळषरियो"
+    },
+    {
+      "id": "leuva-056",
+      "gujarati": "બંહિયો",
+      "english": "Bnhiyo",
+      "hindi": "बंहियो"
+    },
+    {
+      "id": "leuva-057",
+      "gujarati": "ગેલાલી",
+      "english": "Gelali",
+      "hindi": "गेलाली"
+    },
+    {
+      "id": "leuva-058",
+      "gujarati": "ગભોદીયા",
+      "english": "Gabhodiya",
+      "hindi": "गभोदीया"
+    },
+    {
+      "id": "leuva-059",
+      "gujarati": "ગામી",
+      "english": "Gami",
+      "hindi": "गामी"
+    },
+    {
+      "id": "leuva-060",
+      "gujarati": "ગાજીપરા",
+      "english": "Gajipara",
+      "hindi": "गाजीपरा"
+    },
+    {
+      "id": "leuva-061",
+      "gujarati": "ગાબાલી",
+      "english": "Gabali",
+      "hindi": "गाबाली"
+    },
+    {
+      "id": "leuva-062",
+      "gujarati": "ગિણોયા",
+      "english": "Ginoya",
+      "hindi": "गिणोया"
+    },
+    {
+      "id": "leuva-063",
+      "gujarati": "ગિલાણી",
+      "english": "Gilani",
+      "hindi": "गिलाणी"
+    },
+    {
+      "id": "leuva-064",
+      "gujarati": "ગુણા",
+      "english": "Guna",
+      "hindi": "गुणा"
+    },
+    {
+      "id": "leuva-065",
+      "gujarati": "ગુજરાતી",
+      "english": "Gujarati",
+      "hindi": "गुजराती"
+    },
+    {
+      "id": "leuva-066",
+      "gujarati": "ગેડિયા",
+      "english": "Gediya",
+      "hindi": "गेडिया"
+    },
+    {
+      "id": "leuva-067",
+      "gujarati": "ગેવારિયા",
+      "english": "Gevariya",
+      "hindi": "गेवारिया"
+    },
+    {
+      "id": "leuva-068",
+      "gujarati": "સુંદાળીયા",
+      "english": "Sundaliya",
+      "hindi": "सुंदाळीया"
+    },
+    {
+      "id": "leuva-069",
+      "gujarati": "ગૂંદરાણા",
+      "english": "Gundarana",
+      "hindi": "गूंदराणा"
+    },
+    {
+      "id": "leuva-070",
+      "gujarati": "સોડકિયા",
+      "english": "Sodakiya",
+      "hindi": "सोडकिया"
+    },
+    {
+      "id": "leuva-071",
+      "gujarati": "સોધાલી",
+      "english": "Sodhali",
+      "hindi": "सोधाली"
+    },
+    {
+      "id": "leuva-072",
+      "gujarati": "મળડિયા",
+      "english": "Maladiya",
+      "hindi": "मळडिया"
+    },
+    {
+      "id": "leuva-073",
+      "gujarati": "ગોરસિયા",
+      "english": "Gorasiya",
+      "hindi": "गोरसिया"
+    },
+    {
+      "id": "leuva-074",
+      "gujarati": "ગોયાણી",
+      "english": "Goyani",
+      "hindi": "गोयाणी"
+    },
+    {
+      "id": "leuva-075",
+      "gujarati": "ગુંદરણિયા",
+      "english": "Gundaraniya",
+      "hindi": "गुंदरणिया"
+    },
+    {
+      "id": "leuva-076",
+      "gujarati": "ગાંગાણી",
+      "english": "Gangani",
+      "hindi": "गांगाणी"
+    },
+    {
+      "id": "leuva-077",
+      "gujarati": "ગોટી",
+      "english": "Goti",
+      "hindi": "गोटी"
+    },
+    {
+      "id": "leuva-078",
+      "gujarati": "ગરાળિયા",
+      "english": "Garaliya",
+      "hindi": "गराळिया"
+    },
+    {
+      "id": "leuva-079",
+      "gujarati": "ગોયાભી",
+      "english": "Goyabhi",
+      "hindi": "गोयाभी"
+    },
+    {
+      "id": "leuva-080",
+      "gujarati": "ગુજરીયા",
+      "english": "Gujariya",
+      "hindi": "गुजरीया"
+    },
+    {
+      "id": "leuva-081",
+      "gujarati": "ઘીતીધા",
+      "english": "Ghitidha",
+      "hindi": "घीतीधा"
+    },
+    {
+      "id": "leuva-082",
+      "gujarati": "ધામેલીયા",
+      "english": "Dhameliya",
+      "hindi": "धामेलीया"
+    },
+    {
+      "id": "leuva-083",
+      "gujarati": "ધૂસ દિયા",
+      "english": "Dhusa Diya",
+      "hindi": "धूस दिया"
+    },
+    {
+      "id": "leuva-084",
+      "gujarati": "યોંલિયા",
+      "english": "Yonliya",
+      "hindi": "योंलिया"
+    },
+    {
+      "id": "leuva-085",
+      "gujarati": "યેલાલી",
+      "english": "Yelali",
+      "hindi": "येलाली"
+    },
+    {
+      "id": "leuva-086",
+      "gujarati": "ઘરસંડ",
+      "english": "Gharasnda",
+      "hindi": "घरसंड"
+    },
+    {
+      "id": "leuva-087",
+      "gujarati": "ચાલી",
+      "english": "Chali",
+      "hindi": "चाली"
+    },
+    {
+      "id": "leuva-088",
+      "gujarati": "ચભાડિયા",
+      "english": "Chabhadiya",
+      "hindi": "चभाडिया"
+    },
+    {
+      "id": "leuva-089",
+      "gujarati": "ચકરાણી",
+      "english": "Chakarani",
+      "hindi": "चकराणी"
+    },
+    {
+      "id": "leuva-090",
+      "gujarati": "ચવાડિયા",
+      "english": "Chavadiya",
+      "hindi": "चवाडिया"
+    },
+    {
+      "id": "leuva-091",
+      "gujarati": "ચામાત્લી",
+      "english": "Chamatli",
+      "hindi": "चामात्ली"
+    },
+    {
+      "id": "leuva-092",
+      "gujarati": "સાંચડ",
+      "english": "Sanchada",
+      "hindi": "सांचड"
+    },
+    {
+      "id": "leuva-093",
+      "gujarati": "ચાંચડિયા",
+      "english": "Chanchadiya",
+      "hindi": "चांचडिया"
+    },
+    {
+      "id": "leuva-094",
+      "gujarati": "ચોંદષરા",
+      "english": "Chondashara",
+      "hindi": "चोंदषरा"
+    },
+    {
+      "id": "leuva-095",
+      "gujarati": "ચીખાણી",
+      "english": "Chikhani",
+      "hindi": "चीखाणी"
+    },
+    {
+      "id": "leuva-096",
+      "gujarati": "ચીનલિયા",
+      "english": "Chinaliya",
+      "hindi": "चीनलिया"
+    },
+    {
+      "id": "leuva-097",
+      "gujarati": "ચીખડિવા",
+      "english": "Chikhadiva",
+      "hindi": "चीखडिवा"
+    },
+    {
+      "id": "leuva-098",
+      "gujarati": "યોથાણી",
+      "english": "Yothani",
+      "hindi": "योथाणी"
+    },
+    {
+      "id": "leuva-099",
+      "gujarati": "ચોવટિધા",
+      "english": "Chovatidha",
+      "hindi": "चोवटिधा"
+    },
+    {
+      "id": "leuva-100",
+      "gujarati": "ચોરવદિવા",
+      "english": "Choravadiva",
+      "hindi": "चोरवदिवा"
+    },
+    {
+      "id": "leuva-101",
+      "gujarati": "ચોડવડિયા",
+      "english": "Chodavadiya",
+      "hindi": "चोडवडिया"
+    },
+    {
+      "id": "leuva-102",
+      "gujarati": "ચેલા",
+      "english": "Chela",
+      "hindi": "चेला"
+    },
+    {
+      "id": "leuva-103",
+      "gujarati": "ચોસથિયા",
+      "english": "Chosathiya",
+      "hindi": "चोसथिया"
+    },
+    {
+      "id": "leuva-104",
+      "gujarati": "છાડીપા",
+      "english": "Chhadipa",
+      "hindi": "छाडीपा"
+    },
+    {
+      "id": "leuva-105",
+      "gujarati": "છવાત્લી",
+      "english": "Chhavatli",
+      "hindi": "छवात्ली"
+    },
+    {
+      "id": "leuva-106",
+      "gujarati": "છતાપુરા",
+      "english": "Chhatapura",
+      "hindi": "छतापुरा"
+    },
+    {
+      "id": "leuva-107",
+      "gujarati": "છોડવડિયા",
+      "english": "Chhodavadiya",
+      "hindi": "छोडवडिया"
+    },
+    {
+      "id": "leuva-108",
+      "gujarati": "જયાણી",
+      "english": "Jayani",
+      "hindi": "जयाणी"
+    },
+    {
+      "id": "leuva-109",
+      "gujarati": "જસાણી",
+      "english": "Jasani",
+      "hindi": "जसाणी"
+    },
+    {
+      "id": "leuva-110",
+      "gujarati": "જગાભી",
+      "english": "Jagabhi",
+      "hindi": "जगाभी"
+    },
+    {
+      "id": "leuva-111",
+      "gujarati": "જલાપરા",
+      "english": "Jalapara",
+      "hindi": "जलापरा"
+    },
+    {
+      "id": "leuva-112",
+      "gujarati": "જાગાલી",
+      "english": "Jagali",
+      "hindi": "जागाली"
+    },
+    {
+      "id": "leuva-113",
+      "gujarati": "જાદવાણી",
+      "english": "Jadavani",
+      "hindi": "जादवाणी"
+    },
+    {
+      "id": "leuva-114",
+      "gujarati": "જ્લૉદરા",
+      "english": "Jladara",
+      "hindi": "ज्लदरा"
+    },
+    {
+      "id": "leuva-115",
+      "gujarati": "યાણી",
+      "english": "Yani",
+      "hindi": "याणी"
+    },
+    {
+      "id": "leuva-116",
+      "gujarati": "જવાક્દી",
+      "english": "Javakdi",
+      "hindi": "जवाक्दी"
+    },
+    {
+      "id": "leuva-117",
+      "gujarati": "જુકાલી",
+      "english": "Jukali",
+      "hindi": "जुकाली"
+    },
+    {
+      "id": "leuva-118",
+      "gujarati": "જેતપરિયા",
+      "english": "Jetapariya",
+      "hindi": "जेतपरिया"
+    },
+    {
+      "id": "leuva-119",
+      "gujarati": "જેસાણી",
+      "english": "Jesani",
+      "hindi": "जेसाणी"
+    },
+    {
+      "id": "leuva-120",
+      "gujarati": "જોદાણી",
+      "english": "Jodani",
+      "hindi": "जोदाणी"
+    },
+    {
+      "id": "leuva-121",
+      "gujarati": "જોગાણી",
+      "english": "Jogani",
+      "hindi": "जोगाणी"
+    },
+    {
+      "id": "leuva-122",
+      "gujarati": "જુઠાલી",
+      "english": "Juthali",
+      "hindi": "जुठाली"
+    },
+    {
+      "id": "leuva-123",
+      "gujarati": "જાકળિયા",
+      "english": "Jakaliya",
+      "hindi": "जाकळिया"
+    },
+    {
+      "id": "leuva-124",
+      "gujarati": "જાસોલિયા",
+      "english": "Jasoliya",
+      "hindi": "जासोलिया"
+    },
+    {
+      "id": "leuva-125",
+      "gujarati": "ઝાલભ્સરા",
+      "english": "Jhalabhsara",
+      "hindi": "झालभ्सरा"
+    },
+    {
+      "id": "leuva-126",
+      "gujarati": "ગ્લાવાદિયા",
+      "english": "Glavadiya",
+      "hindi": "ग्लावादिया"
+    },
+    {
+      "id": "leuva-127",
+      "gujarati": "ટાઢા",
+      "english": "Tadha",
+      "hindi": "टाढा"
+    },
+    {
+      "id": "leuva-128",
+      "gujarati": "ટાઢાણ્ી",
+      "english": "Tadhani",
+      "hindi": "टाढाण्ी"
+    },
+    {
+      "id": "leuva-129",
+      "gujarati": "ટાંકમ",
+      "english": "Tankama",
+      "hindi": "टांकम"
+    },
+    {
+      "id": "leuva-130",
+      "gujarati": "ટીલાળા",
+      "english": "Tilala",
+      "hindi": "टीलाळा"
+    },
+    {
+      "id": "leuva-131",
+      "gujarati": "ટીકડીધા",
+      "english": "Tikadidha",
+      "hindi": "टीकडीधा"
+    },
+    {
+      "id": "leuva-132",
+      "gujarati": "ટીબકીયા",
+      "english": "Tibakiya",
+      "hindi": "टीबकीया"
+    },
+    {
+      "id": "leuva-133",
+      "gujarati": "ટીંબરાણી",
+      "english": "Tinbarani",
+      "hindi": "टींबराणी"
+    },
+    {
+      "id": "leuva-134",
+      "gujarati": "ટોપિયા",
+      "english": "Topiya",
+      "hindi": "टोपिया"
+    },
+    {
+      "id": "leuva-135",
+      "gujarati": "ડેસિયા",
+      "english": "Desiya",
+      "hindi": "डेसिया"
+    },
+    {
+      "id": "leuva-136",
+      "gujarati": "ઠુમ્મર",
+      "english": "Thummara",
+      "hindi": "ठुम्मर"
+    },
+    {
+      "id": "leuva-137",
+      "gujarati": "મરિયા",
+      "english": "Mariya",
+      "hindi": "मरिया"
+    },
+    {
+      "id": "leuva-138",
+      "gujarati": "ડાવરા",
+      "english": "Davara",
+      "hindi": "डावरा"
+    },
+    {
+      "id": "leuva-139",
+      "gujarati": "ડાવરિયા",
+      "english": "Davariya",
+      "hindi": "डावरिया"
+    },
+    {
+      "id": "leuva-140",
+      "gujarati": "ડાંડ",
+      "english": "Danda",
+      "hindi": "डांड"
+    },
+    {
+      "id": "leuva-141",
+      "gujarati": "ડાંગરિયા",
+      "english": "Dangariya",
+      "hindi": "डांगरिया"
+    },
+    {
+      "id": "leuva-142",
+      "gujarati": "ડાલિયા",
+      "english": "Daliya",
+      "hindi": "डालिया"
+    },
+    {
+      "id": "leuva-143",
+      "gujarati": "ડાયાણી",
+      "english": "Dayani",
+      "hindi": "डायाणी"
+    },
+    {
+      "id": "leuva-144",
+      "gujarati": "ડોખરીયા",
+      "english": "Dokhariya",
+      "hindi": "डोखरीया"
+    },
+    {
+      "id": "leuva-145",
+      "gujarati": "ડોડકિવા",
+      "english": "Dodakiva",
+      "hindi": "डोडकिवा"
+    },
+    {
+      "id": "leuva-146",
+      "gujarati": "ડિડલાલી",
+      "english": "Didalali",
+      "hindi": "डिडलाली"
+    },
+    {
+      "id": "leuva-147",
+      "gujarati": "દોડા",
+      "english": "Doda",
+      "hindi": "दोडा"
+    },
+    {
+      "id": "leuva-148",
+      "gujarati": "ડુંમરાણી",
+      "english": "Dunmarani",
+      "hindi": "डुंमराणी"
+    },
+    {
+      "id": "leuva-149",
+      "gujarati": "ડાકા",
+      "english": "Daka",
+      "hindi": "डाका"
+    },
+    {
+      "id": "leuva-150",
+      "gujarati": "કેડી",
+      "english": "Kedi",
+      "hindi": "केडी"
+    },
+    {
+      "id": "leuva-151",
+      "gujarati": "હોલરિયા",
+      "english": "Holariya",
+      "hindi": "होलरिया"
+    },
+    {
+      "id": "leuva-152",
+      "gujarati": "ઢોકેભિપા",
+      "english": "Dhokebhipa",
+      "hindi": "ढोकेभिपा"
+    },
+    {
+      "id": "leuva-153",
+      "gujarati": "હુહિયા",
+      "english": "Huhiya",
+      "hindi": "हुहिया"
+    },
+    {
+      "id": "leuva-154",
+      "gujarati": "ડુબેસિયા",
+      "english": "Dubesiya",
+      "hindi": "डुबेसिया"
+    },
+    {
+      "id": "leuva-155",
+      "gujarati": "હેબંરિપા",
+      "english": "Hebnripa",
+      "hindi": "हेबंरिपा"
+    },
+    {
+      "id": "leuva-156",
+      "gujarati": "તળાજીયા",
+      "english": "Talajiya",
+      "hindi": "तळाजीया"
+    },
+    {
+      "id": "leuva-157",
+      "gujarati": "તળાવિયા",
+      "english": "Talaviya",
+      "hindi": "तळाविया"
+    },
+    {
+      "id": "leuva-158",
+      "gujarati": "તમાણી",
+      "english": "Tamani",
+      "hindi": "तमाणी"
+    },
+    {
+      "id": "leuva-159",
+      "gujarati": "તરણ્યોલિયા",
+      "english": "Taranyoliya",
+      "hindi": "तरण्योलिया"
+    },
+    {
+      "id": "leuva-160",
+      "gujarati": "તળપદા",
+      "english": "Talapada",
+      "hindi": "तळपदा"
+    },
+    {
+      "id": "leuva-161",
+      "gujarati": "તાળા",
+      "english": "Tala",
+      "hindi": "ताळा"
+    },
+    {
+      "id": "leuva-162",
+      "gujarati": "તારાડિયા",
+      "english": "Taradiya",
+      "hindi": "ताराडिया"
+    },
+    {
+      "id": "leuva-163",
+      "gujarati": "તારપરા",
+      "english": "Tarapara",
+      "hindi": "तारपरा"
+    },
+    {
+      "id": "leuva-164",
+      "gujarati": "તાજાલી",
+      "english": "Tajali",
+      "hindi": "ताजाली"
+    },
+    {
+      "id": "leuva-165",
+      "gujarati": "તવિધિયા",
+      "english": "Tavidhiya",
+      "hindi": "तविधिया"
+    },
+    {
+      "id": "leuva-166",
+      "gujarati": "તોગડિયા",
+      "english": "Togadiya",
+      "hindi": "तोगडिया"
+    },
+    {
+      "id": "leuva-167",
+      "gujarati": "તેશણી",
+      "english": "Teshani",
+      "hindi": "तेशणी"
+    },
+    {
+      "id": "leuva-168",
+      "gujarati": "તંતી",
+      "english": "Tnti",
+      "hindi": "तंती"
+    },
+    {
+      "id": "leuva-169",
+      "gujarati": "દોમંડિયા",
+      "english": "Domndiya",
+      "hindi": "दोमंडिया"
+    },
+    {
+      "id": "leuva-170",
+      "gujarati": "દાવરા",
+      "english": "Davara",
+      "hindi": "दावरा"
+    },
+    {
+      "id": "leuva-171",
+      "gujarati": "દેસાઈ",
+      "english": "Desai",
+      "hindi": "देसाई"
+    },
+    {
+      "id": "leuva-172",
+      "gujarati": "દેવાણ્ણી",
+      "english": "Devanni",
+      "hindi": "देवाण्णी"
+    },
+    {
+      "id": "leuva-173",
+      "gujarati": "દોગા",
+      "english": "Doga",
+      "hindi": "दोगा"
+    },
+    {
+      "id": "leuva-174",
+      "gujarati": "દૂષરેલિયા",
+      "english": "Dushareliya",
+      "hindi": "दूषरेलिया"
+    },
+    {
+      "id": "leuva-175",
+      "gujarati": "દૂધાત",
+      "english": "Dudhata",
+      "hindi": "दूधात"
+    },
+    {
+      "id": "leuva-176",
+      "gujarati": "દૃધાત્રા",
+      "english": "Dridhatra",
+      "hindi": "दृधात्रा"
+    },
+    {
+      "id": "leuva-177",
+      "gujarati": "દ્ધાલી",
+      "english": "Ddhali",
+      "hindi": "द्धाली"
+    },
+    {
+      "id": "leuva-178",
+      "gujarati": "દૂધપરિયા",
+      "english": "Dudhapariya",
+      "hindi": "दूधपरिया"
+    },
+    {
+      "id": "leuva-179",
+      "gujarati": "દેવડા",
+      "english": "Devada",
+      "hindi": "देवडा"
+    },
+    {
+      "id": "leuva-180",
+      "gujarati": "દિયારા",
+      "english": "Diyara",
+      "hindi": "दियारा"
+    },
+    {
+      "id": "leuva-181",
+      "gujarati": "પડુક",
+      "english": "Paduka",
+      "hindi": "पडुक"
+    },
+    {
+      "id": "leuva-182",
+      "gujarati": "ધાર ગળા",
+      "english": "Dhara Gala",
+      "hindi": "धार गळा"
+    },
+    {
+      "id": "leuva-183",
+      "gujarati": "ધામેલિયા",
+      "english": "Dhameliya",
+      "hindi": "धामेलिया"
+    },
+    {
+      "id": "leuva-184",
+      "gujarati": "ધાનાલી",
+      "english": "Dhanali",
+      "hindi": "धानाली"
+    },
+    {
+      "id": "leuva-185",
+      "gujarati": "ધીંગાણી",
+      "english": "Dhingani",
+      "hindi": "धींगाणी"
+    },
+    {
+      "id": "leuva-186",
+      "gujarati": "ધૂળધોયા",
+      "english": "Dhuladhoya",
+      "hindi": "धूळधोया"
+    },
+    {
+      "id": "leuva-187",
+      "gujarati": "ધૂપેલિયા",
+      "english": "Dhupeliya",
+      "hindi": "धूपेलिया"
+    },
+    {
+      "id": "leuva-188",
+      "gujarati": "ધૂડેશિયા",
+      "english": "Dhudeshiya",
+      "hindi": "धूडेशिया"
+    },
+    {
+      "id": "leuva-189",
+      "gujarati": "પોળકિયા",
+      "english": "Polakiya",
+      "hindi": "पोळकिया"
+    },
+    {
+      "id": "leuva-190",
+      "gujarati": "ધોરાજીયા",
+      "english": "Dhorajiya",
+      "hindi": "धोराजीया"
+    },
+    {
+      "id": "leuva-191",
+      "gujarati": "ધોળીયા",
+      "english": "Dholiya",
+      "hindi": "धोळीया"
+    },
+    {
+      "id": "leuva-192",
+      "gujarati": "પીરાળી",
+      "english": "Pirali",
+      "hindi": "पीराळी"
+    },
+    {
+      "id": "leuva-193",
+      "gujarati": "પામી",
+      "english": "Pami",
+      "hindi": "पामी"
+    },
+    {
+      "id": "leuva-194",
+      "gujarati": "ધનાલી",
+      "english": "Dhanali",
+      "hindi": "धनाली"
+    },
+    {
+      "id": "leuva-195",
+      "gujarati": "ધોરી",
+      "english": "Dhori",
+      "hindi": "धोरी"
+    },
+    {
+      "id": "leuva-196",
+      "gujarati": "ધરવાળા",
+      "english": "Dharavala",
+      "hindi": "धरवाळा"
+    },
+    {
+      "id": "leuva-197",
+      "gujarati": "નસીત",
+      "english": "Nasita",
+      "hindi": "नसीत"
+    },
+    {
+      "id": "leuva-198",
+      "gujarati": "નાડિયાદી",
+      "english": "Nadiyadi",
+      "hindi": "नाडियादी"
+    },
+    {
+      "id": "leuva-199",
+      "gujarati": "નડિયાદરા",
+      "english": "Nadiyadara",
+      "hindi": "नडियादरा"
+    },
+    {
+      "id": "leuva-200",
+      "gujarati": "નાળિયાધરા",
+      "english": "Naliyadhara",
+      "hindi": "नाळियाधरा"
+    },
+    {
+      "id": "leuva-201",
+      "gujarati": "નબીપરા",
+      "english": "Nabipara",
+      "hindi": "नबीपरा"
+    },
+    {
+      "id": "leuva-202",
+      "gujarati": "નભોયા",
+      "english": "Nabhoya",
+      "hindi": "नभोया"
+    },
+    {
+      "id": "leuva-203",
+      "gujarati": "નલેશિવા",
+      "english": "Naleshiva",
+      "hindi": "नलेशिवा"
+    },
+    {
+      "id": "leuva-204",
+      "gujarati": "નભોળિયા",
+      "english": "Nabholiya",
+      "hindi": "नभोळिया"
+    },
+    {
+      "id": "leuva-205",
+      "gujarati": "નવાણીયા",
+      "english": "Navaniya",
+      "hindi": "नवाणीया"
+    },
+    {
+      "id": "leuva-206",
+      "gujarati": "નવાપરા",
+      "english": "Navapara",
+      "hindi": "नवापरा"
+    },
+    {
+      "id": "leuva-207",
+      "gujarati": "નરોડિયા",
+      "english": "Narodiya",
+      "hindi": "नरोडिया"
+    },
+    {
+      "id": "leuva-208",
+      "gujarati": "નાદપરા",
+      "english": "Nadapara",
+      "hindi": "नादपरा"
+    },
+    {
+      "id": "leuva-209",
+      "gujarati": "નાકરાણી",
+      "english": "Nakarani",
+      "hindi": "नाकराणी"
+    },
+    {
+      "id": "leuva-210",
+      "gujarati": "નાડોક",
+      "english": "Nadoka",
+      "hindi": "नाडोक"
+    },
+    {
+      "id": "leuva-211",
+      "gujarati": "નાડા",
+      "english": "Nada",
+      "hindi": "नाडा"
+    },
+    {
+      "id": "leuva-212",
+      "gujarati": "નાળ",
+      "english": "Nala",
+      "hindi": "नाळ"
+    },
+    {
+      "id": "leuva-213",
+      "gujarati": "નારોલસિયા",
+      "english": "Narolasiya",
+      "hindi": "नारोलसिया"
+    },
+    {
+      "id": "leuva-214",
+      "gujarati": "નાવડિયા",
+      "english": "Navadiya",
+      "hindi": "नावडिया"
+    },
+    {
+      "id": "leuva-215",
+      "gujarati": "નાગાણી",
+      "english": "Nagani",
+      "hindi": "नागाणी"
+    },
+    {
+      "id": "leuva-216",
+      "gujarati": "નાજાણી",
+      "english": "Najani",
+      "hindi": "नाजाणी"
+    },
+    {
+      "id": "leuva-217",
+      "gujarati": "નાહોલિયા",
+      "english": "Naholiya",
+      "hindi": "नाहोलिया"
+    },
+    {
+      "id": "leuva-218",
+      "gujarati": "નીસરલિયા",
+      "english": "Nisaraliya",
+      "hindi": "नीसरलिया"
+    },
+    {
+      "id": "leuva-219",
+      "gujarati": "નેસડિયા",
+      "english": "Nesadiya",
+      "hindi": "नेसडिया"
+    },
+    {
+      "id": "leuva-220",
+      "gujarati": "નંદાણિયા",
+      "english": "Nndaniya",
+      "hindi": "नंदाणिया"
+    },
+    {
+      "id": "leuva-221",
+      "gujarati": "નાવાણી",
+      "english": "Navani",
+      "hindi": "नावाणी"
+    },
+    {
+      "id": "leuva-222",
+      "gujarati": "પદમાણી",
+      "english": "Padamani",
+      "hindi": "पदमाणी"
+    },
+    {
+      "id": "leuva-223",
+      "gujarati": "પટોળીયા",
+      "english": "Patoliya",
+      "hindi": "पटोळीया"
+    },
+    {
+      "id": "leuva-224",
+      "gujarati": "પરસાણા",
+      "english": "Parasana",
+      "hindi": "परसाणा"
+    },
+    {
+      "id": "leuva-225",
+      "gujarati": "પડસાળા",
+      "english": "Padasala",
+      "hindi": "पडसाळा"
+    },
+    {
+      "id": "leuva-226",
+      "gujarati": "પટવારી",
+      "english": "Patavari",
+      "hindi": "पटवारी"
+    },
+    {
+      "id": "leuva-227",
+      "gujarati": "પાળિયા",
+      "english": "Paliya",
+      "hindi": "पाळिया"
+    },
+    {
+      "id": "leuva-228",
+      "gujarati": "પઢારીવા",
+      "english": "Padhariva",
+      "hindi": "पढारीवा"
+    },
+    {
+      "id": "leuva-229",
+      "gujarati": "પટેલ",
+      "english": "Patela",
+      "hindi": "पटेल"
+    },
+    {
+      "id": "leuva-230",
+      "gujarati": "પરીખ",
+      "english": "Parikha",
+      "hindi": "परीख"
+    },
+    {
+      "id": "leuva-231",
+      "gujarati": "પારખિયા",
+      "english": "Parakhiya",
+      "hindi": "पारखिया"
+    },
+    {
+      "id": "leuva-232",
+      "gujarati": "પાધડાળ",
+      "english": "Padhadala",
+      "hindi": "पाधडाळ"
+    },
+    {
+      "id": "leuva-233",
+      "gujarati": "પાલાણી",
+      "english": "Palani",
+      "hindi": "पालाणी"
+    },
+    {
+      "id": "leuva-234",
+      "gujarati": "પાલડિયા",
+      "english": "Paladiya",
+      "hindi": "पालडिया"
+    },
+    {
+      "id": "leuva-235",
+      "gujarati": "પાટીદાર",
+      "english": "Patidara",
+      "hindi": "पाटीदार"
+    },
+    {
+      "id": "leuva-236",
+      "gujarati": "પાટળિયા",
+      "english": "Pataliya",
+      "hindi": "पाटळिया"
+    },
+    {
+      "id": "leuva-237",
+      "gujarati": "પાટડિયા",
+      "english": "Patadiya",
+      "hindi": "पाटडिया"
+    },
+    {
+      "id": "leuva-238",
+      "gujarati": "પાદરિયા",
+      "english": "Padariya",
+      "hindi": "पादरिया"
+    },
+    {
+      "id": "leuva-239",
+      "gujarati": "પાબાણી",
+      "english": "Pabani",
+      "hindi": "पाबाणी"
+    },
+    {
+      "id": "leuva-240",
+      "gujarati": "પાંચાલી",
+      "english": "Panchali",
+      "hindi": "पांचाली"
+    },
+    {
+      "id": "leuva-241",
+      "gujarati": "પાંભર",
+      "english": "Panbhara",
+      "hindi": "पांभर"
+    },
+    {
+      "id": "leuva-242",
+      "gujarati": "ધાનદંવ",
+      "english": "Dhanadnva",
+      "hindi": "धानदंव"
+    },
+    {
+      "id": "leuva-243",
+      "gujarati": "પાનસુરિયા",
+      "english": "Panasuriya",
+      "hindi": "पानसुरिया"
+    },
+    {
+      "id": "leuva-244",
+      "gujarati": "પાનશેરિયા",
+      "english": "Panasheriya",
+      "hindi": "पानशेरिया"
+    },
+    {
+      "id": "leuva-245",
+      "gujarati": "પાનેલિપા",
+      "english": "Panelipa",
+      "hindi": "पानेलिपा"
+    },
+    {
+      "id": "leuva-246",
+      "gujarati": "પીઠેસિયા",
+      "english": "Pithesiya",
+      "hindi": "पीठेसिया"
+    },
+    {
+      "id": "leuva-247",
+      "gujarati": "પીપલીપા",
+      "english": "Pipalipa",
+      "hindi": "पीपलीपा"
+    },
+    {
+      "id": "leuva-248",
+      "gujarati": "પેષાણી",
+      "english": "Peshani",
+      "hindi": "पेषाणी"
+    },
+    {
+      "id": "leuva-249",
+      "gujarati": "પીઠાડિયા",
+      "english": "Pithadiya",
+      "hindi": "पीठाडिया"
+    },
+    {
+      "id": "leuva-250",
+      "gujarati": "પેઢાડિયા",
+      "english": "Pedhadiya",
+      "hindi": "पेढाडिया"
+    },
+    {
+      "id": "leuva-251",
+      "gujarati": "પોકળ",
+      "english": "Pokala",
+      "hindi": "पोकळ"
+    },
+    {
+      "id": "leuva-252",
+      "gujarati": "પોરિપા",
+      "english": "Poripa",
+      "hindi": "पोरिपा"
+    },
+    {
+      "id": "leuva-253",
+      "gujarati": "પોબરા",
+      "english": "Pobara",
+      "hindi": "पोबरा"
+    },
+    {
+      "id": "leuva-254",
+      "gujarati": "પોંકિયા",
+      "english": "Ponkiya",
+      "hindi": "पोंकिया"
+    },
+    {
+      "id": "leuva-255",
+      "gujarati": "પારુબિયા",
+      "english": "Parubiya",
+      "hindi": "पारुबिया"
+    },
+    {
+      "id": "leuva-256",
+      "gujarati": "પાલરિયા",
+      "english": "Palariya",
+      "hindi": "पालरिया"
+    },
+    {
+      "id": "leuva-257",
+      "gujarati": "પીપળિયા",
+      "english": "Pipaliya",
+      "hindi": "पीपळिया"
+    },
+    {
+      "id": "leuva-258",
+      "gujarati": "ફાગણિિયા",
+      "english": "Phaganiiya",
+      "hindi": "फागणििया"
+    },
+    {
+      "id": "leuva-259",
+      "gujarati": "ફાચરા",
+      "english": "Phachara",
+      "hindi": "फाचरा"
+    },
+    {
+      "id": "leuva-260",
+      "gujarati": "ફાસુકિયા",
+      "english": "Phasukiya",
+      "hindi": "फासुकिया"
+    },
+    {
+      "id": "leuva-261",
+      "gujarati": "ફાટસરિયા",
+      "english": "Phatasariya",
+      "hindi": "फाटसरिया"
+    },
+    {
+      "id": "leuva-262",
+      "gujarati": "ફીચડિયા",
+      "english": "Phichadiya",
+      "hindi": "फीचडिया"
+    },
+    {
+      "id": "leuva-263",
+      "gujarati": "ફી્રવિયા",
+      "english": "Phiraviya",
+      "hindi": "फी्रविया"
+    },
+    {
+      "id": "leuva-264",
+      "gujarati": "ફડદુ",
+      "english": "Phadadu",
+      "hindi": "फडदु"
+    },
+    {
+      "id": "leuva-265",
+      "gujarati": "બબ્બર",
+      "english": "Babbara",
+      "hindi": "बब्बर"
+    },
+    {
+      "id": "leuva-266",
+      "gujarati": "બરવાળીયા",
+      "english": "Baravaliya",
+      "hindi": "बरवाळीया"
+    },
+    {
+      "id": "leuva-267",
+      "gujarati": "બદરખિયા",
+      "english": "Badarakhiya",
+      "hindi": "बदरखिया"
+    },
+    {
+      "id": "leuva-268",
+      "gujarati": "બવેળિષા",
+      "english": "Bavelisha",
+      "hindi": "बवेळिषा"
+    },
+    {
+      "id": "leuva-269",
+      "gujarati": "બટવારા",
+      "english": "Batavara",
+      "hindi": "बटवारा"
+    },
+    {
+      "id": "leuva-270",
+      "gujarati": "બાજરીયા",
+      "english": "Bajariya",
+      "hindi": "बाजरीया"
+    },
+    {
+      "id": "leuva-271",
+      "gujarati": "બાળધા",
+      "english": "Baladha",
+      "hindi": "बाळधा"
+    },
+    {
+      "id": "leuva-272",
+      "gujarati": "બાળવિયા",
+      "english": "Balaviya",
+      "hindi": "बाळविया"
+    },
+    {
+      "id": "leuva-273",
+      "gujarati": "બારસિયા",
+      "english": "Barasiya",
+      "hindi": "बारसिया"
+    },
+    {
+      "id": "leuva-274",
+      "gujarati": "બાબરિયા",
+      "english": "Babariya",
+      "hindi": "बाबरिया"
+    },
+    {
+      "id": "leuva-275",
+      "gujarati": "બાધાણી",
+      "english": "Badhani",
+      "hindi": "बाधाणी"
+    },
+    {
+      "id": "leuva-276",
+      "gujarati": "બરિવાડિપા",
+      "english": "Barivadipa",
+      "hindi": "बरिवाडिपा"
+    },
+    {
+      "id": "leuva-277",
+      "gujarati": "બાલિયા",
+      "english": "Baliya",
+      "hindi": "बालिया"
+    },
+    {
+      "id": "leuva-278",
+      "gujarati": "બોભરોલિયા",
+      "english": "Bobharoliya",
+      "hindi": "बोभरोलिया"
+    },
+    {
+      "id": "leuva-279",
+      "gujarati": "બામરોળિયા",
+      "english": "Bamaroliya",
+      "hindi": "बामरोळिया"
+    },
+    {
+      "id": "leuva-280",
+      "gujarati": "બાશિડા",
+      "english": "Bashida",
+      "hindi": "बाशिडा"
+    },
+    {
+      "id": "leuva-281",
+      "gujarati": "બાવીસી",
+      "english": "Bavisi",
+      "hindi": "बावीसी"
+    },
+    {
+      "id": "leuva-282",
+      "gujarati": "બુંષદા",
+      "english": "Bunshada",
+      "hindi": "बुंषदा"
+    },
+    {
+      "id": "leuva-283",
+      "gujarati": "બુટાણી",
+      "english": "Butani",
+      "hindi": "बुटाणी"
+    },
+    {
+      "id": "leuva-284",
+      "gujarati": "બુર્ષેલિયા",
+      "english": "Bursheliya",
+      "hindi": "बुर्षेलिया"
+    },
+    {
+      "id": "leuva-285",
+      "gujarati": "બુલાલી",
+      "english": "Bulali",
+      "hindi": "बुलाली"
+    },
+    {
+      "id": "leuva-286",
+      "gujarati": "બુઘરા",
+      "english": "Bughara",
+      "hindi": "बुघरा"
+    },
+    {
+      "id": "leuva-287",
+      "gujarati": "બોદર",
+      "english": "Bodara",
+      "hindi": "बोदर"
+    },
+    {
+      "id": "leuva-288",
+      "gujarati": "બોધરા",
+      "english": "Bodhara",
+      "hindi": "बोधरा"
+    },
+    {
+      "id": "leuva-289",
+      "gujarati": "બોડા",
+      "english": "Boda",
+      "hindi": "बोडा"
+    },
+    {
+      "id": "leuva-290",
+      "gujarati": "બોરસદિયા",
+      "english": "Borasadiya",
+      "hindi": "बोरसदिया"
+    },
+    {
+      "id": "leuva-291",
+      "gujarati": "બોરડ",
+      "english": "Borada",
+      "hindi": "बोरड"
+    },
+    {
+      "id": "leuva-292",
+      "gujarati": "બોખડિયા",
+      "english": "Bokhadiya",
+      "hindi": "बोखडिया"
+    },
+    {
+      "id": "leuva-293",
+      "gujarati": "બોધાણી",
+      "english": "Bodhani",
+      "hindi": "बोधाणी"
+    },
+    {
+      "id": "leuva-294",
+      "gujarati": "બુસા",
+      "english": "Busa",
+      "hindi": "बुसा"
+    },
+    {
+      "id": "leuva-295",
+      "gujarati": "બોસરા",
+      "english": "Bosara",
+      "hindi": "बोसरा"
+    },
+    {
+      "id": "leuva-296",
+      "gujarati": "બાંભણિયા",
+      "english": "Banbhaniya",
+      "hindi": "बांभणिया"
+    },
+    {
+      "id": "leuva-297",
+      "gujarati": "બોરડા",
+      "english": "Borada",
+      "hindi": "बोरडा"
+    },
+    {
+      "id": "leuva-298",
+      "gujarati": "ભુવા",
+      "english": "Bhuva",
+      "hindi": "भुवा"
+    },
+    {
+      "id": "leuva-299",
+      "gujarati": "ભગત",
+      "english": "Bhagata",
+      "hindi": "भगत"
+    },
+    {
+      "id": "leuva-300",
+      "gujarati": "ભલાલી",
+      "english": "Bhalali",
+      "hindi": "भलाली"
+    },
+    {
+      "id": "leuva-301",
+      "gujarati": "ભમતાળા",
+      "english": "Bhamatala",
+      "hindi": "भमताळा"
+    },
+    {
+      "id": "leuva-302",
+      "gujarati": "ભાખર",
+      "english": "Bhakhara",
+      "hindi": "भाखर"
+    },
+    {
+      "id": "leuva-303",
+      "gujarati": "ભાખરિયા",
+      "english": "Bhakhariya",
+      "hindi": "भाखरिया"
+    },
+    {
+      "id": "leuva-304",
+      "gujarati": "ભાલાળા",
+      "english": "Bhalala",
+      "hindi": "भालाळा"
+    },
+    {
+      "id": "leuva-305",
+      "gujarati": "ભાલોડી",
+      "english": "Bhalodi",
+      "hindi": "भालोडी"
+    },
+    {
+      "id": "leuva-306",
+      "gujarati": "ભાડલિયા",
+      "english": "Bhadaliya",
+      "hindi": "भाडलिया"
+    },
+    {
+      "id": "leuva-307",
+      "gujarati": "ભાડેશિયા",
+      "english": "Bhadeshiya",
+      "hindi": "भाडेशिया"
+    },
+    {
+      "id": "leuva-308",
+      "gujarati": "ભાતેલિયા",
+      "english": "Bhateliya",
+      "hindi": "भातेलिया"
+    },
+    {
+      "id": "leuva-309",
+      "gujarati": "ભાપાણી",
+      "english": "Bhapani",
+      "hindi": "भापाणी"
+    },
+    {
+      "id": "leuva-310",
+      "gujarati": "ભાડેરિયા",
+      "english": "Bhaderiya",
+      "hindi": "भाडेरिया"
+    },
+    {
+      "id": "leuva-311",
+      "gujarati": "ભીમાણી",
+      "english": "Bhimani",
+      "hindi": "भीमाणी"
+    },
+    {
+      "id": "leuva-312",
+      "gujarati": "ભૂત",
+      "english": "Bhuta",
+      "hindi": "भूत"
+    },
+    {
+      "id": "leuva-313",
+      "gujarati": "ભૂતના",
+      "english": "Bhutana",
+      "hindi": "भूतना"
+    },
+    {
+      "id": "leuva-314",
+      "gujarati": "ભુરાણી",
+      "english": "Bhurani",
+      "hindi": "भुराणी"
+    },
+    {
+      "id": "leuva-315",
+      "gujarati": "ભુદરિયા",
+      "english": "Bhudariya",
+      "hindi": "भुदरिया"
+    },
+    {
+      "id": "leuva-316",
+      "gujarati": "ભાદાણી",
+      "english": "Bhadani",
+      "hindi": "भादाणी"
+    },
+    {
+      "id": "leuva-317",
+      "gujarati": "ભેસાણી",
+      "english": "Bhesani",
+      "hindi": "भेसाणी"
+    },
+    {
+      "id": "leuva-318",
+      "gujarati": "ભંડેરી",
+      "english": "Bhnderi",
+      "hindi": "भंडेरी"
+    },
+    {
+      "id": "leuva-319",
+      "gujarati": "ભાગ્યા",
+      "english": "Bhagya",
+      "hindi": "भाग्या"
+    },
+    {
+      "id": "leuva-320",
+      "gujarati": "બિગરાડિયા",
+      "english": "Bigaradiya",
+      "hindi": "बिगराडिया"
+    },
+    {
+      "id": "leuva-321",
+      "gujarati": "મહારાણા",
+      "english": "Maharana",
+      "hindi": "महाराणा"
+    },
+    {
+      "id": "leuva-322",
+      "gujarati": "મકાણી",
+      "english": "Makani",
+      "hindi": "मकाणी"
+    },
+    {
+      "id": "leuva-323",
+      "gujarati": "મગતરપરા",
+      "english": "Magatarapara",
+      "hindi": "मगतरपरा"
+    },
+    {
+      "id": "leuva-324",
+      "gujarati": "મકરેલિયા",
+      "english": "Makareliya",
+      "hindi": "मकरेलिया"
+    },
+    {
+      "id": "leuva-325",
+      "gujarati": "મનસુંખિયા",
+      "english": "Manasunkhiya",
+      "hindi": "मनसुंखिया"
+    },
+    {
+      "id": "leuva-326",
+      "gujarati": "માલવિયા",
+      "english": "Malaviya",
+      "hindi": "मालविया"
+    },
+    {
+      "id": "leuva-327",
+      "gujarati": "મારકત્રા",
+      "english": "Marakatra",
+      "hindi": "मारकत्रा"
+    },
+    {
+      "id": "leuva-328",
+      "gujarati": "મારડિયા",
+      "english": "Maradiya",
+      "hindi": "मारडिया"
+    },
+    {
+      "id": "leuva-329",
+      "gujarati": "માનપરિયા",
+      "english": "Manapariya",
+      "hindi": "मानपरिया"
+    },
+    {
+      "id": "leuva-330",
+      "gujarati": "માધાળી",
+      "english": "Madhali",
+      "hindi": "माधाळी"
+    },
+    {
+      "id": "leuva-331",
+      "gujarati": "માણસુરા",
+      "english": "Manasura",
+      "hindi": "माणसुरा"
+    },
+    {
+      "id": "leuva-332",
+      "gujarati": "માકડા",
+      "english": "Makada",
+      "hindi": "माकडा"
+    },
+    {
+      "id": "leuva-333",
+      "gujarati": "માથુકિયા",
+      "english": "Mathukiya",
+      "hindi": "माथुकिया"
+    },
+    {
+      "id": "leuva-334",
+      "gujarati": "માવાણી",
+      "english": "Mavani",
+      "hindi": "मावाणी"
+    },
+    {
+      "id": "leuva-335",
+      "gujarati": "માલાત્વી",
+      "english": "Malatvi",
+      "hindi": "मालात्वी"
+    },
+    {
+      "id": "leuva-336",
+      "gujarati": "મુલાત્રી",
+      "english": "Mulatri",
+      "hindi": "मुलात्री"
+    },
+    {
+      "id": "leuva-337",
+      "gujarati": "માજીડિયા",
+      "english": "Majidiya",
+      "hindi": "माजीडिया"
+    },
+    {
+      "id": "leuva-338",
+      "gujarati": "માંગુકિયા",
+      "english": "Mangukiya",
+      "hindi": "मांगुकिया"
+    },
+    {
+      "id": "leuva-339",
+      "gujarati": "માંડણકા",
+      "english": "Mandanaka",
+      "hindi": "मांडणका"
+    },
+    {
+      "id": "leuva-340",
+      "gujarati": "માલવીયા",
+      "english": "Malaviya",
+      "hindi": "मालवीया"
+    },
+    {
+      "id": "leuva-341",
+      "gujarati": "મીઠાણી",
+      "english": "Mithani",
+      "hindi": "मीठाणी"
+    },
+    {
+      "id": "leuva-342",
+      "gujarati": "મીનાણી",
+      "english": "Minani",
+      "hindi": "मीनाणी"
+    },
+    {
+      "id": "leuva-343",
+      "gujarati": "મૂડાળ",
+      "english": "Mudala",
+      "hindi": "मूडाळ"
+    },
+    {
+      "id": "leuva-344",
+      "gujarati": "મુંગરા",
+      "english": "Mungara",
+      "hindi": "मुंगरा"
+    },
+    {
+      "id": "leuva-345",
+      "gujarati": "મુંગલપરા",
+      "english": "Mungalapara",
+      "hindi": "मुंगलपरा"
+    },
+    {
+      "id": "leuva-346",
+      "gujarati": "મુંજપરા",
+      "english": "Munjapara",
+      "hindi": "मुंजपरा"
+    },
+    {
+      "id": "leuva-347",
+      "gujarati": "મેલમિયા",
+      "english": "Melamiya",
+      "hindi": "मेलमिया"
+    },
+    {
+      "id": "leuva-348",
+      "gujarati": "મેરૂપરિયા",
+      "english": "Merupariya",
+      "hindi": "मेरूपरिया"
+    },
+    {
+      "id": "leuva-349",
+      "gujarati": "મેઘાણી",
+      "english": "Meghani",
+      "hindi": "मेघाणी"
+    },
+    {
+      "id": "leuva-350",
+      "gujarati": "માપાણી",
+      "english": "Mapani",
+      "hindi": "मापाणी"
+    },
+    {
+      "id": "leuva-351",
+      "gujarati": "મોકળિયા",
+      "english": "Mokaliya",
+      "hindi": "मोकळिया"
+    },
+    {
+      "id": "leuva-352",
+      "gujarati": "મોલિયા",
+      "english": "Moliya",
+      "hindi": "मोलिया"
+    },
+    {
+      "id": "leuva-353",
+      "gujarati": "મોરડ",
+      "english": "Morada",
+      "hindi": "मोरड"
+    },
+    {
+      "id": "leuva-354",
+      "gujarati": "મોરજા",
+      "english": "Moraja",
+      "hindi": "मोरजा"
+    },
+    {
+      "id": "leuva-355",
+      "gujarati": "મોણપરા",
+      "english": "Monapara",
+      "hindi": "मोणपरा"
+    },
+    {
+      "id": "leuva-356",
+      "gujarati": "માણપરિયા",
+      "english": "Manapariya",
+      "hindi": "माणपरिया"
+    },
+    {
+      "id": "leuva-357",
+      "gujarati": "મોણવેલિયા",
+      "english": "Monaveliya",
+      "hindi": "मोणवेलिया"
+    },
+    {
+      "id": "leuva-358",
+      "gujarati": "મોણસરા",
+      "english": "Monasara",
+      "hindi": "मोणसरा"
+    },
+    {
+      "id": "leuva-359",
+      "gujarati": "મોરડિયા",
+      "english": "Moradiya",
+      "hindi": "मोरडिया"
+    },
+    {
+      "id": "leuva-360",
+      "gujarati": "મોરવાડિયા",
+      "english": "Moravadiya",
+      "hindi": "मोरवाडिया"
+    },
+    {
+      "id": "leuva-361",
+      "gujarati": "મોરલિયા",
+      "english": "Moraliya",
+      "hindi": "मोरलिया"
+    },
+    {
+      "id": "leuva-362",
+      "gujarati": "મેંદપરા",
+      "english": "Mendapara",
+      "hindi": "मेंदपरा"
+    },
+    {
+      "id": "leuva-363",
+      "gujarati": "મોરસિયા",
+      "english": "Morasiya",
+      "hindi": "मोरसिया"
+    },
+    {
+      "id": "leuva-364",
+      "gujarati": "મોજદરા માલદાર",
+      "english": "Mojadara Maladara",
+      "hindi": "मोजदरा मालदार"
+    },
+    {
+      "id": "leuva-365",
+      "gujarati": "માલીયા",
+      "english": "Maliya",
+      "hindi": "मालीया"
+    },
+    {
+      "id": "leuva-366",
+      "gujarati": "મેરા",
+      "english": "Mera",
+      "hindi": "मेरा"
+    },
+    {
+      "id": "leuva-367",
+      "gujarati": "મેનપરા",
+      "english": "Menapara",
+      "hindi": "मेनपरा"
+    },
+    {
+      "id": "leuva-368",
+      "gujarati": "મુછાળ",
+      "english": "Muchhala",
+      "hindi": "मुछाळ"
+    },
+    {
+      "id": "leuva-369",
+      "gujarati": "મુંજાણી",
+      "english": "Munjani",
+      "hindi": "मुंजाणी"
+    },
+    {
+      "id": "leuva-370",
+      "gujarati": "મુંજાત",
+      "english": "Munjata",
+      "hindi": "मुंजात"
+    },
+    {
+      "id": "leuva-371",
+      "gujarati": "મયાણી",
+      "english": "Mayani",
+      "hindi": "मयाणी"
+    },
+    {
+      "id": "leuva-372",
+      "gujarati": "માંદળિયા",
+      "english": "Mandaliya",
+      "hindi": "मांदळिया"
+    },
+    {
+      "id": "leuva-373",
+      "gujarati": "રામાણી",
+      "english": "Ramani",
+      "hindi": "रामाणी"
+    },
+    {
+      "id": "leuva-374",
+      "gujarati": "રત્નાળ્રી",
+      "english": "Ratnalri",
+      "hindi": "रत्नाळ्री"
+    },
+    {
+      "id": "leuva-375",
+      "gujarati": "ર્તનપરા",
+      "english": "Rtanapara",
+      "hindi": "र्तनपरा"
+    },
+    {
+      "id": "leuva-376",
+      "gujarati": "રામોલિયા",
+      "english": "Ramoliya",
+      "hindi": "रामोलिया"
+    },
+    {
+      "id": "leuva-377",
+      "gujarati": "રાજાણી",
+      "english": "Rajani",
+      "hindi": "राजाणी"
+    },
+    {
+      "id": "leuva-378",
+      "gujarati": "રાજેરિયા",
+      "english": "Rajeriya",
+      "hindi": "राजेरिया"
+    },
+    {
+      "id": "leuva-379",
+      "gujarati": "રાજેશરરિથા રાજપરિયા",
+      "english": "Rajeshararitha Rajapariya",
+      "hindi": "राजेशररिथा राजपरिया"
+    },
+    {
+      "id": "leuva-380",
+      "gujarati": "રાસિયા",
+      "english": "Rasiya",
+      "hindi": "रासिया"
+    },
+    {
+      "id": "leuva-381",
+      "gujarati": "રાબડિયા",
+      "english": "Rabadiya",
+      "hindi": "राबडिया"
+    },
+    {
+      "id": "leuva-382",
+      "gujarati": "રાદડિયા",
+      "english": "Radadiya",
+      "hindi": "रादडिया"
+    },
+    {
+      "id": "leuva-383",
+      "gujarati": "રાખોલિયા",
+      "english": "Rakholiya",
+      "hindi": "राखोलिया"
+    },
+    {
+      "id": "leuva-384",
+      "gujarati": "રાજ્ોલિપા",
+      "english": "Rajolipa",
+      "hindi": "राज्ोलिपा"
+    },
+    {
+      "id": "leuva-385",
+      "gujarati": "રાણપરિયા",
+      "english": "Ranapariya",
+      "hindi": "राणपरिया"
+    },
+    {
+      "id": "leuva-386",
+      "gujarati": "રાછરેશિયા",
+      "english": "Rachhareshiya",
+      "hindi": "राछरेशिया"
+    },
+    {
+      "id": "leuva-387",
+      "gujarati": "રાંક",
+      "english": "Ranka",
+      "hindi": "रांक"
+    },
+    {
+      "id": "leuva-388",
+      "gujarati": "રિબડિયા",
+      "english": "Ribadiya",
+      "hindi": "रिबडिया"
+    },
+    {
+      "id": "leuva-389",
+      "gujarati": "રૂપાપરા",
+      "english": "Rupapara",
+      "hindi": "रूपापरा"
+    },
+    {
+      "id": "leuva-390",
+      "gujarati": "રૂપારેલિયા",
+      "english": "Rupareliya",
+      "hindi": "रूपारेलिया"
+    },
+    {
+      "id": "leuva-391",
+      "gujarati": "રૂપેશિયા",
+      "english": "Rupeshiya",
+      "hindi": "रूपेशिया"
+    },
+    {
+      "id": "leuva-392",
+      "gujarati": "રૂપાવટીયા",
+      "english": "Rupavatiya",
+      "hindi": "रूपावटीया"
+    },
+    {
+      "id": "leuva-393",
+      "gujarati": "રૂપાણી રૂડાણી",
+      "english": "Rupani Rudani",
+      "hindi": "रूपाणी رूडाणी"
+    },
+    {
+      "id": "leuva-394",
+      "gujarati": "રૂડકિયા",
+      "english": "Rudakiya",
+      "hindi": "रूडकिया"
+    },
+    {
+      "id": "leuva-395",
+      "gujarati": "સયાણી",
+      "english": "Sayani",
+      "hindi": "सयाणी"
+    },
+    {
+      "id": "leuva-396",
+      "gujarati": "રોકડ",
+      "english": "Rokada",
+      "hindi": "रोकड"
+    },
+    {
+      "id": "leuva-397",
+      "gujarati": "રોજયા",
+      "english": "Rojaya",
+      "hindi": "रोजया"
+    },
+    {
+      "id": "leuva-398",
+      "gujarati": "રંપોળિયા",
+      "english": "Rnpoliya",
+      "hindi": "रंपोळिया"
+    },
+    {
+      "id": "leuva-399",
+      "gujarati": "રંગાણી",
+      "english": "Rngani",
+      "hindi": "रंगाणी"
+    },
+    {
+      "id": "leuva-400",
+      "gujarati": "રાઘવાણી",
+      "english": "Raghavani",
+      "hindi": "राघवाणी"
+    },
+    {
+      "id": "leuva-401",
+      "gujarati": "રોલા",
+      "english": "Rola",
+      "hindi": "रोला"
+    },
+    {
+      "id": "leuva-402",
+      "gujarati": "લકકડ",
+      "english": "Lakakada",
+      "hindi": "लककड"
+    },
+    {
+      "id": "leuva-403",
+      "gujarati": "લાલાણી",
+      "english": "Lalani",
+      "hindi": "लालाणी"
+    },
+    {
+      "id": "leuva-404",
+      "gujarati": "લાંબા",
+      "english": "Lanba",
+      "hindi": "लांबा"
+    },
+    {
+      "id": "leuva-405",
+      "gujarati": "લાખાશી",
+      "english": "Lakhashi",
+      "hindi": "लाखाशी"
+    },
+    {
+      "id": "leuva-406",
+      "gujarati": "વિલાણી",
+      "english": "Vilani",
+      "hindi": "विलाणी"
+    },
+    {
+      "id": "leuva-407",
+      "gujarati": "લીલા",
+      "english": "Lila",
+      "hindi": "लीला"
+    },
+    {
+      "id": "leuva-408",
+      "gujarati": "લિંબાણી",
+      "english": "Linbani",
+      "hindi": "लिंबाणी"
+    },
+    {
+      "id": "leuva-409",
+      "gujarati": "લિંબાશિયા ધિબેશિયા",
+      "english": "Linbashiya Dhibeshiya",
+      "hindi": "लिंबाशिया धिबेशिया"
+    },
+    {
+      "id": "leuva-410",
+      "gujarati": "લોહર",
+      "english": "Lohara",
+      "hindi": "लोहर"
+    },
+    {
+      "id": "leuva-411",
+      "gujarati": "લોઠકિયા",
+      "english": "Lothakiya",
+      "hindi": "लोठकिया"
+    },
+    {
+      "id": "leuva-412",
+      "gujarati": "લુ્ષાગરિયા",
+      "english": "Lushagariya",
+      "hindi": "लु्षागरिया"
+    },
+    {
+      "id": "leuva-413",
+      "gujarati": "લુલિષારિયા",
+      "english": "Lulishariya",
+      "hindi": "लुलिषारिया"
+    },
+    {
+      "id": "leuva-414",
+      "gujarati": "લુખી",
+      "english": "Lukhi",
+      "hindi": "लुखी"
+    },
+    {
+      "id": "leuva-415",
+      "gujarati": "લોડલિયા",
+      "english": "Lodaliya",
+      "hindi": "लोडलिया"
+    },
+    {
+      "id": "leuva-416",
+      "gujarati": "વઘાસિયા",
+      "english": "Vaghasiya",
+      "hindi": "वघासिया"
+    },
+    {
+      "id": "leuva-417",
+      "gujarati": "વનાણી",
+      "english": "Vanani",
+      "hindi": "वनाणी"
+    },
+    {
+      "id": "leuva-418",
+      "gujarati": "વાગડિયા",
+      "english": "Vagadiya",
+      "hindi": "वागडिया"
+    },
+    {
+      "id": "leuva-419",
+      "gujarati": "વસ્તાપરા",
+      "english": "Vastapara",
+      "hindi": "वस्तापरा"
+    },
+    {
+      "id": "leuva-420",
+      "gujarati": "વડોદરીયા",
+      "english": "Vadodariya",
+      "hindi": "वडोदरीया"
+    },
+    {
+      "id": "leuva-421",
+      "gujarati": "વસ્તી",
+      "english": "Vasti",
+      "hindi": "वस्ती"
+    },
+    {
+      "id": "leuva-422",
+      "gujarati": "વરસાણી",
+      "english": "Varasani",
+      "hindi": "वरसाणी"
+    },
+    {
+      "id": "leuva-423",
+      "gujarati": "વકીલ વસાણી",
+      "english": "Vakila Vasani",
+      "hindi": "वकील वसाणी"
+    },
+    {
+      "id": "leuva-424",
+      "gujarati": "વસનાણી",
+      "english": "Vasanani",
+      "hindi": "वसनाणी"
+    },
+    {
+      "id": "leuva-425",
+      "gujarati": "વડાળીયા",
+      "english": "Vadaliya",
+      "hindi": "वडाळीया"
+    },
+    {
+      "id": "leuva-426",
+      "gujarati": "વણસોલિવા",
+      "english": "Vanasoliva",
+      "hindi": "वणसोलिवा"
+    },
+    {
+      "id": "leuva-427",
+      "gujarati": "વણપરિયા",
+      "english": "Vanapariya",
+      "hindi": "वणपरिया"
+    },
+    {
+      "id": "leuva-428",
+      "gujarati": "વલ્લભાણી",
+      "english": "Vallabhani",
+      "hindi": "वल्लभाणी"
+    },
+    {
+      "id": "leuva-429",
+      "gujarati": "વસોયા",
+      "english": "Vasoya",
+      "hindi": "वसोया"
+    },
+    {
+      "id": "leuva-430",
+      "gujarati": "વજખરિપા",
+      "english": "Vajakharipa",
+      "hindi": "वजखरिपा"
+    },
+    {
+      "id": "leuva-431",
+      "gujarati": "વાદી",
+      "english": "Vadi",
+      "hindi": "वादी"
+    },
+    {
+      "id": "leuva-432",
+      "gujarati": "વાહોસિપા",
+      "english": "Vahosipa",
+      "hindi": "वाहोसिपा"
+    },
+    {
+      "id": "leuva-433",
+      "gujarati": "વાવડિયા",
+      "english": "Vavadiya",
+      "hindi": "वावडिया"
+    },
+    {
+      "id": "leuva-434",
+      "gujarati": "વાટલિયા",
+      "english": "Vataliya",
+      "hindi": "वाटलिया"
+    },
+    {
+      "id": "leuva-435",
+      "gujarati": "વાવીધા",
+      "english": "Vavidha",
+      "hindi": "वावीधा"
+    },
+    {
+      "id": "leuva-436",
+      "gujarati": "વાધાણ્રી",
+      "english": "Vadhanri",
+      "hindi": "वाधाण्री"
+    },
+    {
+      "id": "leuva-437",
+      "gujarati": "વાજડિય વિરાણી",
+      "english": "Vajadiya Virani",
+      "hindi": "वाजडिय विराणी"
+    },
+    {
+      "id": "leuva-438",
+      "gujarati": "વિરપરીયા",
+      "english": "Virapariya",
+      "hindi": "विरपरीया"
+    },
+    {
+      "id": "leuva-439",
+      "gujarati": "વિરડિયા",
+      "english": "Viradiya",
+      "hindi": "विरडिया"
+    },
+    {
+      "id": "leuva-440",
+      "gujarati": "વિસાદરિયા",
+      "english": "Visadariya",
+      "hindi": "विसादरिया"
+    },
+    {
+      "id": "leuva-441",
+      "gujarati": "વિસોવેલિયા",
+      "english": "Visoveliya",
+      "hindi": "विसोवेलिया"
+    },
+    {
+      "id": "leuva-442",
+      "gujarati": "વિરોલિયા",
+      "english": "Viroliya",
+      "hindi": "विरोलिया"
+    },
+    {
+      "id": "leuva-443",
+      "gujarati": "વાછાણી",
+      "english": "Vachhani",
+      "hindi": "वाछाणी"
+    },
+    {
+      "id": "leuva-444",
+      "gujarati": "વેકરીયા",
+      "english": "Vekariya",
+      "hindi": "वेकरीया"
+    },
+    {
+      "id": "leuva-445",
+      "gujarati": "વિજપરા",
+      "english": "Vijapara",
+      "hindi": "विजपरा"
+    },
+    {
+      "id": "leuva-446",
+      "gujarati": "વેગડ",
+      "english": "Vegada",
+      "hindi": "वेगड"
+    },
+    {
+      "id": "leuva-447",
+      "gujarati": "વેલાણી",
+      "english": "Velani",
+      "hindi": "वेलाणी"
+    },
+    {
+      "id": "leuva-448",
+      "gujarati": "વેજલકા",
+      "english": "Vejalaka",
+      "hindi": "वेजलका"
+    },
+    {
+      "id": "leuva-449",
+      "gujarati": "વૈપ્લવ",
+      "english": "Vaiplava",
+      "hindi": "वैप्लव"
+    },
+    {
+      "id": "leuva-450",
+      "gujarati": "વોરા",
+      "english": "Vora",
+      "hindi": "वोरा"
+    },
+    {
+      "id": "leuva-451",
+      "gujarati": "સતાભી",
+      "english": "Satabhi",
+      "hindi": "सताभी"
+    },
+    {
+      "id": "leuva-452",
+      "gujarati": "સંબિ સવામી",
+      "english": "Snbi Savami",
+      "hindi": "संबि सवामी"
+    },
+    {
+      "id": "leuva-453",
+      "gujarati": "સતાશિયા",
+      "english": "Satashiya",
+      "hindi": "सताशिया"
+    },
+    {
+      "id": "leuva-454",
+      "gujarati": "સહૈયા",
+      "english": "Sahaiya",
+      "hindi": "सहैया"
+    },
+    {
+      "id": "leuva-455",
+      "gujarati": "સભાયા",
+      "english": "Sabhaya",
+      "hindi": "सभाया"
+    },
+    {
+      "id": "leuva-456",
+      "gujarati": "સકરાણી",
+      "english": "Sakarani",
+      "hindi": "सकराणी"
+    },
+    {
+      "id": "leuva-457",
+      "gujarati": "સખાપરા",
+      "english": "Sakhapara",
+      "hindi": "सखापरा"
+    },
+    {
+      "id": "leuva-458",
+      "gujarati": "સગરલિયા",
+      "english": "Sagaraliya",
+      "hindi": "सगरलिया"
+    },
+    {
+      "id": "leuva-459",
+      "gujarati": "સખરેલિયા",
+      "english": "Sakhareliya",
+      "hindi": "सखरेलिया"
+    },
+    {
+      "id": "leuva-460",
+      "gujarati": "સકાણી",
+      "english": "Sakani",
+      "hindi": "सकाणी"
+    },
+    {
+      "id": "leuva-461",
+      "gujarati": "સભાણી",
+      "english": "Sabhani",
+      "hindi": "सभाणी"
+    },
+    {
+      "id": "leuva-462",
+      "gujarati": "સંઘરાણીયા",
+      "english": "Sngharaniya",
+      "hindi": "संघराणीया"
+    },
+    {
+      "id": "leuva-463",
+      "gujarati": "સરધારા",
+      "english": "Saradhara",
+      "hindi": "सरधारा"
+    },
+    {
+      "id": "leuva-464",
+      "gujarati": "સરવાણી",
+      "english": "Saravani",
+      "hindi": "सरवाणी"
+    },
+    {
+      "id": "leuva-465",
+      "gujarati": "સાપરિયા",
+      "english": "Sapariya",
+      "hindi": "सापरिया"
+    },
+    {
+      "id": "leuva-466",
+      "gujarati": "સાડારિય સાયાણી",
+      "english": "Sadariya Sayani",
+      "hindi": "साडारिय सायाणी"
+    },
+    {
+      "id": "leuva-467",
+      "gujarati": "સાવજ",
+      "english": "Savaja",
+      "hindi": "सावज"
+    },
+    {
+      "id": "leuva-468",
+      "gujarati": "સાંબલપરા",
+      "english": "Sanbalapara",
+      "hindi": "सांबलपरा"
+    },
+    {
+      "id": "leuva-469",
+      "gujarati": "સાવલિયા",
+      "english": "Savaliya",
+      "hindi": "सावलिया"
+    },
+    {
+      "id": "leuva-470",
+      "gujarati": "સાવળિયા",
+      "english": "Savaliya",
+      "hindi": "सावळिया"
+    },
+    {
+      "id": "leuva-471",
+      "gujarati": "સાદેડિયા",
+      "english": "Sadediya",
+      "hindi": "सादेडिया"
+    },
+    {
+      "id": "leuva-472",
+      "gujarati": "સાહોલિયા",
+      "english": "Saholiya",
+      "hindi": "साहोलिया"
+    },
+    {
+      "id": "leuva-473",
+      "gujarati": "શિયાણી",
+      "english": "Shiyani",
+      "hindi": "शियाणी"
+    },
+    {
+      "id": "leuva-474",
+      "gujarati": "સાંદપરા",
+      "english": "Sandapara",
+      "hindi": "सांदपरा"
+    },
+    {
+      "id": "leuva-475",
+      "gujarati": "સિતાપરા",
+      "english": "Sitapara",
+      "hindi": "सितापरा"
+    },
+    {
+      "id": "leuva-476",
+      "gujarati": "સિદંપરા",
+      "english": "Sidnpara",
+      "hindi": "सिदंपरा"
+    },
+    {
+      "id": "leuva-477",
+      "gujarati": "સિદ્ધપરા",
+      "english": "Siddhapara",
+      "hindi": "सिद्धपरा"
+    },
+    {
+      "id": "leuva-478",
+      "gujarati": "સિખલિય સિગડિયા",
+      "english": "Sikhaliya Sigadiya",
+      "hindi": "सिखलिय सिगडिया"
+    },
+    {
+      "id": "leuva-479",
+      "gujarati": "સિગવડિય",
+      "english": "Sigavadiya",
+      "hindi": "सिगवडिय"
+    },
+    {
+      "id": "leuva-480",
+      "gujarati": "સુદાણી",
+      "english": "Sudani",
+      "hindi": "सुदाणी"
+    },
+    {
+      "id": "leuva-481",
+      "gujarati": "સુકાલી",
+      "english": "Sukali",
+      "hindi": "सुकाली"
+    },
+    {
+      "id": "leuva-482",
+      "gujarati": "સુરાળી",
+      "english": "Surali",
+      "hindi": "सुराळी"
+    },
+    {
+      "id": "leuva-483",
+      "gujarati": "સુથાર",
+      "english": "Suthara",
+      "hindi": "सुथार"
+    },
+    {
+      "id": "leuva-484",
+      "gujarati": "સુતરિયા",
+      "english": "Sutariya",
+      "hindi": "सुतरिया"
+    },
+    {
+      "id": "leuva-485",
+      "gujarati": "સુરતી",
+      "english": "Surati",
+      "hindi": "सुरती"
+    },
+    {
+      "id": "leuva-486",
+      "gujarati": "સાંગણી",
+      "english": "Sangani",
+      "hindi": "सांगणी"
+    },
+    {
+      "id": "leuva-487",
+      "gujarati": "સાંગાણી",
+      "english": "Sangani",
+      "hindi": "सांगाणी"
+    },
+    {
+      "id": "leuva-488",
+      "gujarati": "સાંગડિયા",
+      "english": "Sangadiya",
+      "hindi": "सांगडिया"
+    },
+    {
+      "id": "leuva-489",
+      "gujarati": "સુખડિયા",
+      "english": "Sukhadiya",
+      "hindi": "सुखडिया"
+    },
+    {
+      "id": "leuva-490",
+      "gujarati": "સુખરેલિયા",
+      "english": "Sukhareliya",
+      "hindi": "सुखरेलिया"
+    },
+    {
+      "id": "leuva-491",
+      "gujarati": "સુખાળી",
+      "english": "Sukhali",
+      "hindi": "सुखाळी"
+    },
+    {
+      "id": "leuva-492",
+      "gujarati": "સુજાગરિય સેજલિયા",
+      "english": "Sujagariya Sejaliya",
+      "hindi": "सुजागरिय सेजलिया"
+    },
+    {
+      "id": "leuva-493",
+      "gujarati": "સેલરા",
+      "english": "Selara",
+      "hindi": "सेलरा"
+    },
+    {
+      "id": "leuva-494",
+      "gujarati": "સેલારક સોરેટિવા",
+      "english": "Selaraka Soretiva",
+      "hindi": "सेलारक सोरेटिवा"
+    },
+    {
+      "id": "leuva-495",
+      "gujarati": "સોમાણી",
+      "english": "Somani",
+      "hindi": "सोमाणी"
+    },
+    {
+      "id": "leuva-496",
+      "gujarati": "સોનાળી",
+      "english": "Sonali",
+      "hindi": "सोनाळी"
+    },
+    {
+      "id": "leuva-497",
+      "gujarati": "સોનોગરા",
+      "english": "Sonogara",
+      "hindi": "सोनोगरा"
+    },
+    {
+      "id": "leuva-498",
+      "gujarati": "સોજીત્રા",
+      "english": "Sojitra",
+      "hindi": "सोजीत्रा"
+    },
+    {
+      "id": "leuva-499",
+      "gujarati": "સોનખરીયા",
+      "english": "Sonakhariya",
+      "hindi": "सोनखरीया"
+    },
+    {
+      "id": "leuva-500",
+      "gujarati": "સંઘાણી",
+      "english": "Snghani",
+      "hindi": "संघाणी"
+    },
+    {
+      "id": "leuva-501",
+      "gujarati": "સંભાડિયા",
+      "english": "Snbhadiya",
+      "hindi": "संभाडिया"
+    },
+    {
+      "id": "leuva-502",
+      "gujarati": "સનિલિયા",
+      "english": "Saniliya",
+      "hindi": "सनिलिया"
+    },
+    {
+      "id": "leuva-503",
+      "gujarati": "સવાણી",
+      "english": "Savani",
+      "hindi": "सवाणी"
+    },
+    {
+      "id": "leuva-504",
+      "gujarati": "સાંચપરા",
+      "english": "Sanchapara",
+      "hindi": "सांचपरा"
+    },
+    {
+      "id": "leuva-505",
+      "gujarati": "સુરિય સચકરા",
+      "english": "Suriya Sachakara",
+      "hindi": "सुरिय सचकरा"
+    },
+    {
+      "id": "leuva-506",
+      "gujarati": "સાકળિધા",
+      "english": "Sakalidha",
+      "hindi": "साकळिधा"
+    },
+    {
+      "id": "leuva-507",
+      "gujarati": "શિરોયા",
+      "english": "Shiroya",
+      "hindi": "शिरोया"
+    },
+    {
+      "id": "leuva-508",
+      "gujarati": "શામી",
+      "english": "Shami",
+      "hindi": "शामी"
+    },
+    {
+      "id": "leuva-509",
+      "gujarati": "શાનાણરી",
+      "english": "Shananari",
+      "hindi": "शानाणरी"
+    },
+    {
+      "id": "leuva-510",
+      "gujarati": "શિંગાળા",
+      "english": "Shingala",
+      "hindi": "शिंगाळा"
+    },
+    {
+      "id": "leuva-511",
+      "gujarati": "શિમડિયા",
+      "english": "Shimadiya",
+      "hindi": "शिमडिया"
+    },
+    {
+      "id": "leuva-512",
+      "gujarati": "શિકાણી",
+      "english": "Shikani",
+      "hindi": "शिकाणी"
+    },
+    {
+      "id": "leuva-513",
+      "gujarati": "શિતળિવા",
+      "english": "Shitaliva",
+      "hindi": "शितळिवा"
+    },
+    {
+      "id": "leuva-514",
+      "gujarati": "શેખડા",
+      "english": "Shekhada",
+      "hindi": "शेखडा"
+    },
+    {
+      "id": "leuva-515",
+      "gujarati": "શેલાણી",
+      "english": "Shelani",
+      "hindi": "शेलाणी"
+    },
+    {
+      "id": "leuva-516",
+      "gujarati": "રોલડિયા",
+      "english": "Roladiya",
+      "hindi": "रोलडिया"
+    },
+    {
+      "id": "leuva-517",
+      "gujarati": "શોચિયા",
+      "english": "Shochiya",
+      "hindi": "शोचिया"
+    },
+    {
+      "id": "leuva-518",
+      "gujarati": "રોલરા",
+      "english": "Rolara",
+      "hindi": "रोलरा"
+    },
+    {
+      "id": "leuva-519",
+      "gujarati": "સંક",
+      "english": "Snka",
+      "hindi": "संक"
+    },
+    {
+      "id": "leuva-520",
+      "gujarati": "હેપાર્ણ હરખા",
+      "english": "Heparna Harakha",
+      "hindi": "हेपार्ण हरखा"
+    },
+    {
+      "id": "leuva-521",
+      "gujarati": "હાલરિયા",
+      "english": "Halariya",
+      "hindi": "हालरिया"
+    },
+    {
+      "id": "leuva-522",
+      "gujarati": "હારાય",
+      "english": "Haraya",
+      "hindi": "हाराय"
+    },
+    {
+      "id": "leuva-523",
+      "gujarati": "હાલાણી",
+      "english": "Halani",
+      "hindi": "हालाणी"
+    },
+    {
+      "id": "leuva-524",
+      "gujarati": "હાંસલિયા",
+      "english": "Hansaliya",
+      "hindi": "हांसलिया"
+    },
+    {
+      "id": "leuva-525",
+      "gujarati": "હિરોવી",
+      "english": "Hirovi",
+      "hindi": "हिरोवी"
+    },
+    {
+      "id": "leuva-526",
+      "gujarati": "હિરપરા",
+      "english": "Hirapara",
+      "hindi": "हिरपरा"
+    },
+    {
+      "id": "leuva-527",
+      "gujarati": "હાડકિયા",
+      "english": "Hadakiya",
+      "hindi": "हाडकिया"
+    },
+    {
+      "id": "leuva-528",
+      "gujarati": "હરપાલ",
+      "english": "Harapala",
+      "hindi": "हरपाल"
+    },
+    {
+      "id": "leuva-529",
+      "gujarati": "ગાડા",
+      "english": "Gada",
+      "hindi": "गाडा"
+    },
+    {
+      "id": "leuva-530",
+      "gujarati": "ત્રાપસિયા",
+      "english": "Trapasiya",
+      "hindi": "त्रापसिया"
+    },
+    {
+      "id": "leuva-531",
+      "gujarati": "ત્રિકમાણી",
+      "english": "Trikamani",
+      "hindi": "त्रिकमाणी"
+    },
+    {
+      "id": "leuva-532",
+      "gujarati": "અમીન",
+      "english": "Amina",
+      "hindi": "अमीन"
+    },
+    {
+      "id": "leuva-533",
+      "gujarati": "અમીપરા",
+      "english": "Amipara",
+      "hindi": "अमीपरा"
+    },
+    {
+      "id": "leuva-534",
+      "gujarati": "અકબરી",
+      "english": "Akabari",
+      "hindi": "अकबरी"
+    },
+    {
+      "id": "leuva-535",
+      "gujarati": "અભંગ અણી",
+      "english": "Abhnga Ani",
+      "hindi": "अभंग अणी"
+    },
+    {
+      "id": "leuva-536",
+      "gujarati": "અનત સકા",
+      "english": "Anata Saka",
+      "hindi": "अनत सका"
+    },
+    {
+      "id": "leuva-537",
+      "gujarati": "અં",
+      "english": "An",
+      "hindi": "अं"
+    },
+    {
+      "id": "leuva-538",
+      "gujarati": "અધરવિય",
+      "english": "Adharaviya",
+      "hindi": "अधरविय"
+    },
+    {
+      "id": "leuva-539",
+      "gujarati": "અદાણી",
+      "english": "Adani",
+      "hindi": "अदाणी"
+    },
+    {
+      "id": "leuva-540",
+      "gujarati": "અમદાવાદી",
+      "english": "Amadavadi",
+      "hindi": "अमदावादी"
+    },
+    {
+      "id": "leuva-541",
+      "gujarati": "અજોડ",
+      "english": "Ajoda",
+      "hindi": "अजोड"
+    },
+    {
+      "id": "leuva-542",
+      "gujarati": "અડાલજ",
+      "english": "Adalaja",
+      "hindi": "अडालज"
+    },
+    {
+      "id": "leuva-543",
+      "gujarati": "અશેડ",
+      "english": "Asheda",
+      "hindi": "अशेड"
+    },
+    {
+      "id": "leuva-544",
+      "gujarati": "આણદાણી",
+      "english": "Anadani",
+      "hindi": "आणदाणी"
+    },
+    {
+      "id": "leuva-545",
+      "gujarati": "અંશ",
+      "english": "Ansha",
+      "hindi": "अंश"
+    },
+    {
+      "id": "leuva-546",
+      "gujarati": "આંબિય",
+      "english": "Anbiya",
+      "hindi": "आंबिय"
+    },
+    {
+      "id": "leuva-547",
+      "gujarati": "આંકે સયા આલ",
+      "english": "Anke Saya Ala",
+      "hindi": "आंके सया आल"
+    },
+    {
+      "id": "leuva-548",
+      "gujarati": "આબાલ",
+      "english": "Abala",
+      "hindi": "आबाल"
+    },
+    {
+      "id": "leuva-549",
+      "gujarati": "આંજણ",
+      "english": "Anjana",
+      "hindi": "आंजण"
+    },
+    {
+      "id": "leuva-550",
+      "gujarati": "આગિયા આસોદરિયા",
+      "english": "Agiya Asodariya",
+      "hindi": "आगिया आसोदरिया"
+    },
+    {
+      "id": "leuva-551",
+      "gujarati": "વાલિયા",
+      "english": "Valiya",
+      "hindi": "वालिया"
+    },
+    {
+      "id": "leuva-552",
+      "gujarati": "અજ્નપણ",
+      "english": "Ajnapana",
+      "hindi": "अज्नपण"
+    },
+    {
+      "id": "leuva-553",
+      "gujarati": "અવૈયા",
+      "english": "Avaiya",
+      "hindi": "अवैया"
+    },
+    {
+      "id": "leuva-554",
+      "gujarati": "ઈટલિયા",
+      "english": "Italiya",
+      "hindi": "ईटलिया"
+    },
+    {
+      "id": "leuva-555",
+      "gujarati": "ઉકાળી",
+      "english": "Ukali",
+      "hindi": "उकाळी"
+    },
+    {
+      "id": "leuva-556",
+      "gujarati": "ઉજિધ",
+      "english": "Ujidha",
+      "hindi": "उजिध"
+    },
+    {
+      "id": "leuva-557",
+      "gujarati": "સદિયા ઉમર",
+      "english": "Sadiya Umara",
+      "hindi": "सदिया उमर"
+    }
   ],
   "kadvaPatel": []
 }
