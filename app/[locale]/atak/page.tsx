@@ -4,6 +4,8 @@ import { useMemo, useState } from 'react'
 import Link from 'next/link'
 import { ArrowLeft, ChevronLeft, ChevronRight, Search, SlidersHorizontal } from 'lucide-react'
 import rawData from '@/data/patidarAtak.json'
+import { Header } from '@/components/ui/Header'
+import { Footer } from '@/components/ui/Footer'
 
 type Entry = { id: string; gujarati: string; english: string; hindi: string }
 const data = rawData as { leuvaPatel: Entry[]; kadvaPatel: Entry[] }
@@ -26,9 +28,10 @@ export default function AtakPage({ params }: { params: { locale: string } }) {
   const visible = filtered.slice((page - 1) * pageSize, page * pageSize)
   const selectCommunity = (value: 'leuvaPatel' | 'kadvaPatel') => { setCommunity(value); setPage(1); setQuery('') }
 
-  return <main className="atak-page">
-    <div className="atak-wrap">
-      <Link className="atak-back" href="/"><ArrowLeft /> Patidar History</Link>
+  return <div className="archive-page">
+    <Header locale={locale} />
+    <main className="atak-page">
+      <div className="atak-wrap">
       <header className="atak-heading"><p className="eyebrow">Public research directory</p><h1>Patidar Surnames</h1><p>A reference directory of surnames and family branches found in the supplied Patidar source images.</p></header>
       <div className="atak-tabs" role="tablist" aria-label="Patidar community"><button role="tab" aria-selected={community === 'leuvaPatel'} className={community === 'leuvaPatel' ? 'active' : ''} onClick={() => selectCommunity('leuvaPatel')}>Leuva Patel</button><button role="tab" aria-selected={community === 'kadvaPatel'} className={community === 'kadvaPatel' ? 'active' : ''} onClick={() => selectCommunity('kadvaPatel')}>Kadva Patel</button></div>
       {community === 'kadvaPatel' ? <section className="atak-empty"><p className="eyebrow">Kadva Patel</p><h2>Kadva Patel surnames are not included in this edition.</h2><p>The supplied source images document the Leuva Patel surname directory. Kadva Patel records can be added when source material is provided.</p></section> : <>
@@ -39,5 +42,7 @@ export default function AtakPage({ params }: { params: { locale: string } }) {
       <footer className="atak-source"><p className="eyebrow">Source note</p><p><strong>Supplied Patidar surname reference images</strong></p><p>This directory uses the surname spellings from the supplied images. Patel is included only as it appears in those source images; no internet search or external surname list was used.</p></footer>
     </div>
   </main>
+  <Footer locale={locale} />
+  </div>
 }
 

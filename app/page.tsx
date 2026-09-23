@@ -2,8 +2,10 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { ArrowUpRight, BookOpen, ChevronRight, Menu, Search, X } from 'lucide-react'
+import { ArrowUpRight, BookOpen, Search, X } from 'lucide-react'
 import { articles, contentStats, documents, heroImage, people, places, sections, timeline } from '@/data/archive'
+import { Header } from '@/components/ui/Header'
+import { Footer } from '@/components/ui/Footer'
 
 const heroSlides = [
   { image: heroImage, caption: 'Agricultural landscape, Gujarat', credit: 'Archive image · Demonstration' },
@@ -12,10 +14,7 @@ const heroSlides = [
   { image: '/images/hero-dham.png', caption: 'Khodaldham and Umiya Dham · Places of belonging', credit: 'Generated architectural interpretation · Demonstration' },
 ]
 
-const nav = [['history', 'History'], ['sections', 'Sections'], ['timeline', 'Timeline'], ['people', 'People'], ['places', 'Places'], ['library', 'Documents'], ['regions', 'Regions'], ['diaspora', 'Diaspora']]
-
 export default function Page() {
-  const [menuOpen, setMenuOpen] = useState(false)
   const [query, setQuery] = useState('')
   const [activeHero, setActiveHero] = useState(0)
   const featured = sections.filter((section) => section.featured)
@@ -30,12 +29,7 @@ export default function Page() {
 
   return (
     <main className="archive-shell">
-      <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="Patidar History home"><span className="wordmark-mark">PH</span><span><strong>Patidar</strong> History<small>Digital archive</small></span></a>
-        <nav className="desktop-nav" aria-label="Primary navigation">{nav.map(([href, label]) => <Link key={href} href={`/en/${href}`}>{label}</Link>)}</nav>
-        <div className="header-actions"><button className="icon-button" aria-label="Search" onClick={() => document.getElementById('archive-search')?.focus()}><Search /></button><button className="language-button">EN <ChevronRight /></button><button className="menu-button" aria-label="Toggle menu" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</button></div>
-      </header>
-      {menuOpen && <div className="mobile-menu">{nav.map(([href, label]) => <Link key={href} href={`/en/${href}`} onClick={() => setMenuOpen(false)}>{label}<ArrowUpRight /></Link>)}</div>}
+      <Header locale="en" />
 
       <section id="top" className="hero" aria-label="Featured archive stories">
         {heroSlides.map((slide, index) => <div key={slide.image} className={`hero-slide ${index === activeHero ? 'is-active' : ''}`} style={{ backgroundImage: `linear-gradient(90deg, rgba(20,25,22,.83) 0%, rgba(20,25,22,.45) 54%, rgba(20,25,22,.08) 100%), url(${slide.image})` }} aria-hidden={index !== activeHero} />)}
@@ -56,7 +50,7 @@ export default function Page() {
 
       <section className="search-section section-pad"><div><p className="eyebrow">Search the archive</p><h2>What are you<br /><em>looking for?</em></h2></div><div className="search-wrap"><Search /><input id="archive-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search people, places, events..." aria-label="Search archive" />{query && <button onClick={() => setQuery('')} aria-label="Clear search"><X /></button>}<span>⌘ K</span></div></section>
 
-      <footer className="site-footer"><div className="footer-top"><a className="wordmark footer-brand" href="#top"><span className="wordmark-mark">PH</span><span><strong>Patidar</strong> History<small>Digital archive</small></span></a><p>A digital archive of people, places,<br />movement and memory.</p><div className="footer-languages"><span>Read in</span><button>English</button><button>ગુજરાતી</button><button>हिन्दी</button></div></div><div className="footer-bottom"><span>© 2026 Patidar History Archive</span><span>Demonstration content · Research prototype</span><span>Built for a living archive <span className="footer-dot">●</span></span></div></footer>
+      <Footer locale="en" />
     </main>
   )
 }

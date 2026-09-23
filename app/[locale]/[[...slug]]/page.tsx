@@ -2,13 +2,12 @@ import Link from 'next/link'
 import { notFound, redirect } from 'next/navigation'
 import { ArrowLeft, ArrowUpRight, BookOpen, MapPin, Search, Users } from 'lucide-react'
 import { articles, documents, people, places, sections, timeline } from '@/data/archive'
-
-const nav = [['history', 'History'], ['sections', 'Sections'], ['timeline', 'Timeline'], ['people', 'People'], ['places', 'Places'], ['library', 'Documents'], ['regions', 'Regions'], ['diaspora', 'Diaspora']]
+import { Header } from '@/components/ui/Header'
+import { Footer } from '@/components/ui/Footer'
 const localeText = { en: { back: 'Back to archive', explore: 'Explore', records: 'records', demo: 'Demonstration content — replace with verified research records.' }, gu: { back: 'આર્કાઇવ પર પાછા જાઓ', explore: 'જુઓ', records: 'રેકોર્ડ', demo: 'ડેમો સામગ્રી — ચકાસેલ સંશોધન રેકોર્ડથી બદલો.' }, hi: { back: 'अभिलेख पर वापस जाएं', explore: 'देखें', records: 'रिकॉर्ड', demo: 'डेमो सामग्री — सत्यापित शोध रिकॉर्ड से बदलें.' } }
 
 function Shell({ locale, children }: { locale: string; children: React.ReactNode }) {
-  const t = localeText[locale as keyof typeof localeText] ?? localeText.en
-  return <div className="archive-page"><header className="archive-page-header"><Link className="wordmark" href="/"><span className="wordmark-mark">PH</span><span><strong>Patidar</strong> History<small>Digital archive</small></span></Link><nav>{nav.map(([href, label]) => <Link key={href} href={`/${locale}/${href}`}>{label}</Link>)}</nav><div className="archive-page-tools"><Link href={`/${locale}/search`} aria-label="Search"><Search /></Link><Link href={`/${locale === 'en' ? 'gu' : 'en'}`} className="locale-link">{locale === 'en' ? 'ગુજરાતી' : 'EN'}</Link></div></header><main>{children}</main><footer className="archive-page-footer"><div><Link className="wordmark" href="/"><span className="wordmark-mark">PH</span><span><strong>Patidar</strong> History<small>Digital archive</small></span></Link><p>A digital archive of people, places, movement and memory.</p></div><div><p className="eyebrow light">Read in</p><Link href="/en">English</Link> <Link href="/gu">ગુજરાતી</Link> <Link href="/hi">हिन्दी</Link></div><small>{t.demo}</small></footer></div>
+  return <div className="archive-page"><Header locale={locale} /><main>{children}</main><Footer locale={locale} /></div>
 }
 function Heading({ eyebrow, title, intro }: { eyebrow: string; title: string; intro?: string }) { return <header className="archive-heading"><p className="eyebrow">{eyebrow}</p><h1>{title}</h1>{intro && <p>{intro}</p>}</header> }
 function Cards({ locale }: { locale: string }) { return <div className="archive-card-grid">{sections.map(section => <Link className="archive-card" key={section.id} href={`/${locale}/sections/${section.slug}`}><img src={section.coverImage?.url} alt={section.coverImage?.alt ?? section.title} /><div><p className="eyebrow">Section · {articles.filter(a => a.sectionId === section.id).length} articles</p><h2>{section.title}</h2><p>{section.description}</p><span>{localeText[locale as keyof typeof localeText]?.explore ?? 'Explore'} <ArrowUpRight /></span></div></Link>)}</div> }
