@@ -1,19 +1,14 @@
 import Link from 'next/link'
-
-const localeText = {
-  en: { demo: 'Demonstration content — replace with verified research records.' },
-  gu: { demo: 'ડેમો સામગ્રી — ચકાસેલ સંશોધન રેકોર્ડથી બદલો.' },
-  hi: { demo: 'डेमो सामग्री — सत्यापित शोध रिकॉर्ड से बदलें.' }
-}
+import { isLocale, t, ui, type Locale } from '@/lib/i18n'
 
 export function Footer({ locale }: { locale: string }) {
-  const t = localeText[locale as keyof typeof localeText] ?? localeText.en
-  const isEn = locale === 'en'
+  const loc: Locale = isLocale(locale) ? locale : 'en'
+  const isEn = loc === 'en'
 
   return (
     <footer className="site-footer">
       <div className="footer-top">
-        <Link className="wordmark footer-brand" href={`/${isEn ? '' : locale}`}>
+        <Link className="wordmark footer-brand" href={`/${isEn ? '' : loc}`}>
           <span className="wordmark-mark">PH</span>
           <span><strong>Patidar</strong> History<small>Digital archive</small></span>
         </Link>
@@ -24,10 +19,15 @@ export function Footer({ locale }: { locale: string }) {
           <Link href="/gu">ગુજરાતી</Link>
           <Link href="/hi">हिन्दी</Link>
         </div>
+        <div className="footer-languages">
+          <span>Learn more</span>
+          <Link href={`/${loc}/about`}>{t(ui.nav.about, loc)}</Link>
+          <Link href={`/${loc}/sources`}>{t(ui.nav.sources, loc)}</Link>
+        </div>
       </div>
       <div className="footer-bottom">
         <span>© 2026 Patidar History Archive</span>
-        <span>{t.demo}</span>
+        <span>{t(ui.common.demo, loc)}</span>
         <span>Built for a living archive <span className="footer-dot">●</span></span>
       </div>
     </footer>
