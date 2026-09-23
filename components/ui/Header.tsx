@@ -2,9 +2,11 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { ArrowUpRight, Menu, Search, X } from 'lucide-react'
-import { LOCALES, LOCALE_SHORT, isLocale, ui, t, type Locale } from '@/lib/i18n'
+import { LOCALES, LOCALE_LABEL, isLocale, ui, t, type Locale } from '@/lib/i18n'
 import { ThemeToggle } from './ThemeToggle'
+import { LanguageSwitcher, getLocalizedPath } from '@/components/archive/LanguageSwitcher'
 
 const nav: [keyof typeof ui.nav, string][] = [
   ['history', 'history'],
@@ -20,9 +22,9 @@ const nav: [keyof typeof ui.nav, string][] = [
 
 export function Header({ locale }: { locale: string }) {
   const [menuOpen, setMenuOpen] = useState(false)
-  const [langOpen, setLangOpen] = useState(false)
   const loc: Locale = isLocale(locale) ? locale : 'en'
   const isEn = loc === 'en'
+  const pathname = usePathname() || '/'
 
   return (
     <>
@@ -43,20 +45,7 @@ export function Header({ locale }: { locale: string }) {
             <Search />
           </Link>
 
-          <div style={{ position: 'relative' }}>
-            <button className="language-button" onClick={() => setLangOpen((v) => !v)} aria-haspopup="listbox" aria-expanded={langOpen} aria-label="Change language">
-              {LOCALE_SHORT[loc]}
-            </button>
-            {langOpen && (
-              <div className="mobile-menu" style={{ position: 'absolute', inset: 'auto 0 auto auto', top: 'calc(100% + 10px)', width: 160, borderBottom: 0, boxShadow: '0 20px 40px rgba(0,0,0,.18)' }}>
-                {LOCALES.map((l) => (
-                  <Link key={l} href={`/${l === 'en' ? '' : l}`} onClick={() => setLangOpen(false)} style={{ fontSize: 16, padding: '10px 0' }}>
-                    {LOCALE_SHORT[l]} · {l === 'en' ? 'English' : l === 'gu' ? 'ગુજરાતી' : 'हिन्दी'}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
+          <span className="desktop-only-lang"><LanguageSwitcher locale={loc} /></span>
 
           <ThemeToggle />
 
@@ -75,6 +64,17 @@ export function Header({ locale }: { locale: string }) {
             </Link>
           ))}
           <Link href={`/${loc}/about`} onClick={() => setMenuOpen(false)}>{t(ui.nav.about, loc)}<ArrowUpRight /></Link>
+
+          <div className="mobile-menu-lang">
+            <span>{t(ui.common.readIn, loc)}</span>
+            <div>
+              {LOCALES.map((l) => (
+                <Link key={l} href={getLocalizedPath(pathname, l)} onClick={() => setMenuOpen(false)} className={l === loc ? 'is-active' : ''}>
+                  {LOCALE_LABEL[l]}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       )}
     </>

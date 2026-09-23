@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { isLocale, t, ui, type Locale } from '@/lib/i18n'
+import { LanguageSwitcher } from '@/components/archive/LanguageSwitcher'
 
 export function Footer({ locale }: { locale: string }) {
   const loc: Locale = isLocale(locale) ? locale : 'en'
@@ -13,14 +14,9 @@ export function Footer({ locale }: { locale: string }) {
           <span><strong>Patidar</strong> History<small>Digital archive</small></span>
         </Link>
         <p>A digital archive of people, places,<br />movement and memory.</p>
+        <LanguageSwitcher locale={loc} variant="footer" />
         <div className="footer-languages">
-          <span>Read in</span>
-          <Link href="/en">English</Link>
-          <Link href="/gu">ગુજરાતી</Link>
-          <Link href="/hi">हिन्दी</Link>
-        </div>
-        <div className="footer-languages">
-          <span>Learn more</span>
+          <span>{t(ui.common.explore, loc)}</span>
           <Link href={`/${loc}/about`}>{t(ui.nav.about, loc)}</Link>
           <Link href={`/${loc}/sources`}>{t(ui.nav.sources, loc)}</Link>
         </div>

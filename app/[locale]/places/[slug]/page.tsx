@@ -8,7 +8,7 @@ import { EvidenceBadge } from '@/components/archive/EvidenceBadge'
 import { ContentBlockRenderer } from '@/components/archive/ContentBlocks'
 import { ArticleCard, DocumentCard } from '@/components/archive/Cards'
 import { getPlaceBySlug, getArticleBySlug, getPeopleBySlugs, getTimelineByIds, getDocumentsBySlugs, getReferencesByIds } from '@/lib/content'
-import { isLocale, localize, type Locale } from '@/lib/i18n'
+import { isLocale, localize, t, ui, type Locale } from '@/lib/i18n'
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params
@@ -31,10 +31,14 @@ export default async function PlaceDetailPage({ params }: { params: Promise<{ lo
     getReferencesByIds(place.referenceIds ?? []),
   ])
 
+  // Place.historicalSignificance has no per-locale variant, so body text is always English
+  // even on the rare place where descriptionI18n (just the one summary line) is set.
+  const isTranslated = locale === 'en'
+
   return (
     <PageShell locale={locale}>
       <div className="archive-heading" style={{ marginBottom: 0 }}>
-        <Breadcrumbs locale={locale} trail={[{ label: 'Places', href: `/${locale}/places` }, { label: place.name }]} />
+        <Breadcrumbs locale={locale} trail={[{ label: t(ui.nav.places, locale), href: `/${locale}/places` }, { label: place.name }]} />
       </div>
 
       <div className="profile-hero">
@@ -50,30 +54,35 @@ export default async function PlaceDetailPage({ params }: { params: Promise<{ lo
 
       <div className="profile-layout">
         <div>
-          <h2 className="cb-heading">Historical significance</h2>
+          {!isTranslated && (
+            <div className="cb-note evidence-open-question" style={{ marginBottom: 30 }}>
+              <p style={{ margin: 0 }}>{t(ui.common.translationPendingGeneric, locale)}</p>
+            </div>
+          )}
+          <h2 className="cb-heading">{t(ui.common.historicalSignificance, locale)}</h2>
           <ContentBlockRenderer blocks={place.historicalSignificance} locale={locale} references={references} />
 
           {place.patidarConnection && (
             <div className="cb-factbox" style={{ marginTop: 30 }}>
-              <h4>Patidar connection</h4>
+              <h4>{t(ui.common.patidarConnection, locale)}</h4>
               <p style={{ color: 'var(--archive-ink)', fontSize: 14, lineHeight: 1.7, margin: 0 }}>{place.patidarConnection}</p>
             </div>
           )}
           {place.modernContext && (
             <div style={{ marginTop: 30 }}>
-              <h2 className="cb-heading">Modern context</h2>
+              <h2 className="cb-heading">{t(ui.common.modernContext, locale)}</h2>
               <p className="cb-paragraph">{place.modernContext}</p>
             </div>
           )}
 
           <div className="cb-map" style={{ marginTop: 30 }}>
             <MapPin />
-            <div><strong>{place.name}</strong><span>Interactive map integration pending — shown as an illustrative placeholder.</span></div>
+            <div><strong>{place.name}</strong><span>{t(ui.common.illustrativeMap, locale)}</span></div>
           </div>
 
           {references.length > 0 && (
             <div style={{ marginTop: 50 }}>
-              <h2 className="cb-heading">References</h2>
+              <h2 className="cb-heading">{t(ui.common.references, locale)}</h2>
               <div className="references-list" style={{ marginTop: 20 }}>
                 {references.map((ref, i) => (
                   <div className="reference-row" id={`ref-${ref.id}`} key={ref.id}>
@@ -89,7 +98,7 @@ export default async function PlaceDetailPage({ params }: { params: Promise<{ lo
         <aside className="profile-side">
           {timelineEvents.length > 0 && (
             <div>
-              <h3>Timeline</h3>
+              <h3>{t(ui.common.timeline, locale)}</h3>
               {timelineEvents.map((e) => (
                 <div key={e.id} style={{ padding: '10px 0', borderBottom: '1px solid var(--archive-line)' }}>
                   <span style={{ color: 'var(--archive-rust)', fontSize: 12, fontWeight: 700 }}>{e.year}</span>
@@ -100,7 +109,7 @@ export default async function PlaceDetailPage({ params }: { params: Promise<{ lo
           )}
           {people.length > 0 && (
             <div>
-              <h3>Important people</h3>
+              <h3>{t(ui.common.importantPeople, locale)}</h3>
               <div className="side-link-list">
                 {people.map((p) => (
                   <Link key={p.id} className="side-link-row" href={`/${locale}/people/${p.slug}`}>
@@ -115,13 +124,13 @@ export default async function PlaceDetailPage({ params }: { params: Promise<{ lo
 
       {documents.length > 0 && (
         <section style={{ marginTop: 90 }}>
-          <div className="feature-heading"><div><p className="eyebrow">Documents</p></div></div>
+          <div className="feature-heading"><div><p className="eyebrow">{t(ui.common.documents, locale)}</p></div></div>
           <div className="doc-grid">{documents.map((d) => <DocumentCard key={d.id} locale={locale} document={d} />)}</div>
         </section>
       )}
       {articles.length > 0 && (
         <section style={{ marginTop: 70 }}>
-          <div className="feature-heading"><div><p className="eyebrow">Related articles</p></div></div>
+          <div className="feature-heading"><div><p className="eyebrow">{t(ui.common.relatedArticles, locale)}</p></div></div>
           <div className="directory-grid">{articles.map((a: any) => <ArticleCard key={a.id} locale={locale} article={a} />)}</div>
         </section>
       )}

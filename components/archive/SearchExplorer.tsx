@@ -4,9 +4,19 @@ import { useMemo, useState } from 'react'
 import Link from 'next/link'
 import { ArrowUpRight, Search } from 'lucide-react'
 import type { Article, Section, Person, Place, Document, TimelineEvent, Region, DiasporaDestination, SearchResult } from '@/types/content'
+import { isLocale, t, ui, type Locale } from '@/lib/i18n'
 
-const LABEL: Record<SearchResult['type'], string> = {
-  article: 'Articles', section: 'Sections', person: 'People', place: 'Places', document: 'Documents', timeline: 'Timeline', region: 'Regions', diaspora: 'Diaspora',
+function labelFor(type: SearchResult['type'], l: Locale): string {
+  switch (type) {
+    case 'article': return t(ui.common.articles, l)
+    case 'section': return t(ui.nav.sections, l)
+    case 'person': return t(ui.nav.people, l)
+    case 'place': return t(ui.nav.places, l)
+    case 'document': return t(ui.nav.library, l)
+    case 'timeline': return t(ui.nav.timeline, l)
+    case 'region': return t(ui.nav.regions, l)
+    case 'diaspora': return t(ui.nav.diaspora, l)
+  }
 }
 
 export function SearchExplorer({
@@ -23,6 +33,7 @@ export function SearchExplorer({
   diaspora: DiasporaDestination[]
 }) {
   const [query, setQuery] = useState('')
+  const l: Locale = isLocale(locale) ? locale : 'en'
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -49,15 +60,15 @@ export function SearchExplorer({
     <>
       <div className="search-hero-input">
         <Search />
-        <input autoFocus placeholder="Search people, places, events, documents…" aria-label="Search the archive" value={query} onChange={(e) => setQuery(e.target.value)} />
+        <input autoFocus placeholder={t(ui.common.searchPlaceholderLong, l)} aria-label={t(ui.common.search, l)} value={query} onChange={(e) => setQuery(e.target.value)} />
       </div>
-      {!query && <p style={{ color: 'var(--archive-text-muted)', fontSize: 14 }}>Try “Africa”, “Bardoli”, “Amul” or “Charotar.”</p>}
+      {!query && <p style={{ color: 'var(--archive-text-muted)', fontSize: 14 }}>{t(ui.common.searchHint, l)}</p>}
       {query && results.length === 0 && (
-        <div className="empty-state"><h2>Nothing found yet</h2><p>No records match “{query}.” Try a shorter or different term.</p></div>
+        <div className="empty-state"><h2>{t(ui.common.nothingFoundYet, l)}</h2><p>{t(ui.common.noResults, l)} {t(ui.common.tryShorterTerm, l)}</p></div>
       )}
       {(Object.keys(grouped) as SearchResult['type'][]).map((type) => (
         <div className="search-category" key={type}>
-          <div className="search-category-head"><span>{LABEL[type]}</span><span className="count">{grouped[type]!.length}</span></div>
+          <div className="search-category-head"><span>{labelFor(type, l)}</span><span className="count">{grouped[type]!.length}</span></div>
           {grouped[type]!.map((r) => (
             <Link key={r.id} href={r.href} className="search-result-row">
               {r.imageUrl && <img src={r.imageUrl} alt="" />}

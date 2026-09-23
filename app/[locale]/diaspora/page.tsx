@@ -5,20 +5,18 @@ import { PageShell, PageHeading } from '@/components/archive/PageShell'
 import { MapPanel } from '@/components/archive/MapPanel'
 import { PersonCard } from '@/components/archive/Cards'
 import { getDiaspora, getPeopleBySlugs, getArticleBySlug } from '@/lib/content'
+import { isLocale, pageCopy, t, ui } from '@/lib/i18n'
 
 export const metadata: Metadata = { title: 'Global Diaspora | Patidar History', description: 'East Africa, Britain, the United States, Canada and Australia — the global journey of the Patidar diaspora.' }
 
 export default async function DiasporaPage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params
+  const { locale: rawLocale } = await params
+  const locale = isLocale(rawLocale) ? rawLocale : 'en'
   const destinations = await getDiaspora()
 
   return (
     <PageShell locale={locale}>
-      <PageHeading
-        eyebrow="Beyond Gujarat"
-        title="A global community"
-        intro="From colonial-era East African trade to British resettlement, American hospitality entrepreneurship and beyond — explore this connected geography through carefully sourced stories, places and movement."
-      />
+      <PageHeading {...pageCopy('diaspora', locale)} />
       <MapPanel
         label="World"
         items={destinations.map((d) => ({ slug: d.slug, name: d.name, position: d.mapPosition, href: `#${d.slug}` }))}
@@ -35,25 +33,32 @@ export default async function DiasporaPage({ params }: { params: Promise<{ local
                 <div>
                   <p className="eyebrow"><Calendar style={{ width: 11, display: 'inline', verticalAlign: '-1px' }} /> {d.period} · origin: {d.originGujarat}</p>
                   <h2 style={{ marginTop: 8 }}>{d.name}</h2>
+
+                  {locale !== 'en' && (
+                    <div className="cb-note evidence-open-question" style={{ margin: '18px 0' }}>
+                      <p style={{ margin: 0 }}>{t(ui.common.translationPendingGeneric, locale)}</p>
+                    </div>
+                  )}
+
                   <p>{d.context}</p>
                   <p>{d.settlement}</p>
 
                   <div className="two-col-panel" style={{ marginTop: 30 }}>
                     <div>
-                      <h3 style={{ fontSize: 12, letterSpacing: '.08em', textTransform: 'uppercase', color: 'var(--archive-text-muted)' }}>Sectors</h3>
+                      <h3 style={{ fontSize: 12, letterSpacing: '.08em', textTransform: 'uppercase', color: 'var(--archive-text-muted)' }}>{t(ui.common.sectors, locale)}</h3>
                       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 10 }}>
                         {d.sectors.map((s) => <span key={s} className="filter-chip" style={{ cursor: 'default' }}>{s}</span>)}
                       </div>
                     </div>
                     <div>
-                      <h3 style={{ fontSize: 12, letterSpacing: '.08em', textTransform: 'uppercase', color: 'var(--archive-text-muted)' }}>Institutions</h3>
+                      <h3 style={{ fontSize: 12, letterSpacing: '.08em', textTransform: 'uppercase', color: 'var(--archive-text-muted)' }}>{t(ui.common.institutions, locale)}</h3>
                       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 10 }}>
                         {d.institutions.map((s) => <span key={s} className="filter-chip" style={{ cursor: 'default' }}>{s}</span>)}
                       </div>
                     </div>
                   </div>
 
-                  <h3 style={{ marginTop: 26, fontFamily: 'DM Serif Display, serif', fontWeight: 400, fontSize: 20 }}>The community today</h3>
+                  <h3 style={{ marginTop: 26, fontFamily: 'DM Serif Display, serif', fontWeight: 400, fontSize: 20 }}>{t(ui.common.communityToday, locale)}</h3>
                   <p>{d.modernCommunity}</p>
 
                   {articles.length > 0 && (

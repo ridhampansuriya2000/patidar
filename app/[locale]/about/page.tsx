@@ -1,18 +1,25 @@
 import type { Metadata } from 'next'
 import { PageShell, PageHeading } from '@/components/archive/PageShell'
 import { EvidenceBadge } from '@/components/archive/EvidenceBadge'
+import { isLocale, pageCopy, t, ui } from '@/lib/i18n'
 
 export const metadata: Metadata = { title: 'About | Patidar History', description: 'Purpose, methodology, sources and the evidence framework behind this archive.' }
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params
+  const { locale: rawLocale } = await params
+  const locale = isLocale(rawLocale) ? rawLocale : 'en'
   return (
     <PageShell locale={locale}>
       <PageHeading
-        eyebrow="Institutional record"
-        title="About this archive"
+        {...pageCopy('about', locale)}
         intro="Patidar History is a research interface designed to make historical uncertainty visible and connections easy to follow — built as a starting point for a genuinely archival history of the Patidar community."
       />
+
+      {locale !== 'en' && (
+        <div className="cb-note evidence-open-question" style={{ marginBottom: 40, maxWidth: 730 }}>
+          <p style={{ margin: 0 }}>{t(ui.common.translationPendingGeneric, locale)}</p>
+        </div>
+      )}
 
       <div className="article-body institutional">
         <h2>Purpose</h2>

@@ -5,6 +5,7 @@ import { Breadcrumbs } from '@/components/archive/Breadcrumbs'
 import { ContentBlockRenderer } from '@/components/archive/ContentBlocks'
 import { ArticleCard, PersonCard, PlaceCard, DocumentCard } from '@/components/archive/Cards'
 import { getRegionBySlug, getArticleBySlug, getPeopleBySlugs, getPlacesBySlugs, getDocumentsBySlugs, getTimelineByIds } from '@/lib/content'
+import { isLocale, t, ui, type Locale } from '@/lib/i18n'
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params
@@ -14,7 +15,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 export default async function RegionDetailPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
-  const { locale, slug } = await params
+  const { locale: rawLocale, slug } = await params
+  const locale: Locale = isLocale(rawLocale) ? rawLocale : 'en'
   const region = await getRegionBySlug(slug)
   if (!region) notFound()
 
@@ -29,7 +31,7 @@ export default async function RegionDetailPage({ params }: { params: Promise<{ l
   return (
     <PageShell locale={locale}>
       <div className="archive-heading" style={{ marginBottom: 0 }}>
-        <Breadcrumbs locale={locale} trail={[{ label: 'Regions', href: `/${locale}/regions` }, { label: region.name }]} />
+        <Breadcrumbs locale={locale} trail={[{ label: t(ui.nav.regions, locale), href: `/${locale}/regions` }, { label: region.name }]} />
       </div>
 
       <div className="section-detail" style={{ marginTop: 40 }}>
@@ -37,15 +39,22 @@ export default async function RegionDetailPage({ params }: { params: Promise<{ l
         <div>
           <p className="eyebrow">{region.tagline}</p>
           <h1 style={{ font: '400 clamp(2.2rem,5vw,3.6rem)/1.02 "DM Serif Display", serif', margin: '10px 0 20px' }}>{region.name}</h1>
+
+          {locale !== 'en' && (
+            <div className="cb-note evidence-open-question" style={{ margin: '18px 0' }}>
+              <p style={{ margin: 0 }}>{t(ui.common.translationPendingGeneric, locale)}</p>
+            </div>
+          )}
+
           <p>{region.description}</p>
 
-          <h2>Patidar connection</h2>
+          <h2>{t(ui.common.patidarConnection, locale)}</h2>
           <p>{region.patidarConnection}</p>
 
-          {region.agriculture && (<><h2>Agriculture</h2><p>{region.agriculture}</p></>)}
-          {region.migration && (<><h2>Migration</h2><p>{region.migration}</p></>)}
+          {region.agriculture && (<><h2>{t(ui.common.agriculture, locale)}</h2><p>{region.agriculture}</p></>)}
+          {region.migration && (<><h2>{t(ui.common.migration, locale)}</h2><p>{region.migration}</p></>)}
 
-          <h2>Key areas</h2>
+          <h2>{t(ui.common.keyAreas, locale)}</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 30 }}>
             {region.keyAreas.map((area) => <span key={area} className="filter-chip" style={{ cursor: 'default' }}>{area}</span>)}
           </div>
@@ -58,7 +67,7 @@ export default async function RegionDetailPage({ params }: { params: Promise<{ l
 
       {timelineEvents.length > 0 && (
         <section style={{ marginTop: 80 }}>
-          <div className="feature-heading"><div><p className="eyebrow">Timeline</p></div></div>
+          <div className="feature-heading"><div><p className="eyebrow">{t(ui.common.timelineEvents, locale)}</p></div></div>
           <div className="long-timeline">
             {timelineEvents.map((e) => <article key={e.id}><span>{e.year}</span><div><h2>{e.title}</h2><p>{e.description}</p></div></article>)}
           </div>
@@ -66,25 +75,25 @@ export default async function RegionDetailPage({ params }: { params: Promise<{ l
       )}
       {people.length > 0 && (
         <section style={{ marginTop: 70 }}>
-          <div className="feature-heading"><div><p className="eyebrow">Important people</p></div></div>
+          <div className="feature-heading"><div><p className="eyebrow">{t(ui.common.importantPeople, locale)}</p></div></div>
           <div className="directory-grid">{people.map((p) => <PersonCard key={p.id} locale={locale} person={p} />)}</div>
         </section>
       )}
       {places.length > 0 && (
         <section style={{ marginTop: 70 }}>
-          <div className="feature-heading"><div><p className="eyebrow">Important places</p></div></div>
+          <div className="feature-heading"><div><p className="eyebrow">{t(ui.common.importantPlaces, locale)}</p></div></div>
           <div className="directory-grid">{places.map((p) => <PlaceCard key={p.id} locale={locale} place={p} />)}</div>
         </section>
       )}
       {documents.length > 0 && (
         <section style={{ marginTop: 70 }}>
-          <div className="feature-heading"><div><p className="eyebrow">Documents</p></div></div>
+          <div className="feature-heading"><div><p className="eyebrow">{t(ui.common.documents, locale)}</p></div></div>
           <div className="doc-grid">{documents.map((d) => <DocumentCard key={d.id} locale={locale} document={d} />)}</div>
         </section>
       )}
       {articles.length > 0 && (
         <section style={{ marginTop: 70 }}>
-          <div className="feature-heading"><div><p className="eyebrow">Articles</p></div></div>
+          <div className="feature-heading"><div><p className="eyebrow">{t(ui.common.relatedArticles, locale)}</p></div></div>
           <div className="directory-grid">{articles.map((a: any) => <ArticleCard key={a.id} locale={locale} article={a} />)}</div>
         </section>
       )}

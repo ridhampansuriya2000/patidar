@@ -5,6 +5,7 @@ import { PageShell } from '@/components/archive/PageShell'
 import { Breadcrumbs } from '@/components/archive/Breadcrumbs'
 import { ArticleCard } from '@/components/archive/Cards'
 import { getDocumentBySlug, getArticleBySlug, getReferences } from '@/lib/content'
+import { isLocale, t, ui, type Locale } from '@/lib/i18n'
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params
@@ -14,7 +15,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 export default async function DocumentDetailPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
-  const { locale, slug } = await params
+  const { locale: rawLocale, slug } = await params
+  const locale: Locale = isLocale(rawLocale) ? rawLocale : 'en'
   const doc = await getDocumentBySlug(slug)
   if (!doc) notFound()
 
@@ -27,8 +29,14 @@ export default async function DocumentDetailPage({ params }: { params: Promise<{
   return (
     <PageShell locale={locale}>
       <div className="archive-heading" style={{ marginBottom: 0 }}>
-        <Breadcrumbs locale={locale} trail={[{ label: 'Documents', href: `/${locale}/library` }, { label: doc.title }]} />
+        <Breadcrumbs locale={locale} trail={[{ label: t(ui.nav.library, locale), href: `/${locale}/library` }, { label: doc.title }]} />
       </div>
+
+      {locale !== 'en' && (
+        <div className="cb-note evidence-open-question" style={{ margin: '30px 0 0' }}>
+          <p style={{ margin: 0 }}>{t(ui.common.translationPendingGeneric, locale)}</p>
+        </div>
+      )}
 
       <div className="doc-detail-header" style={{ marginTop: 40 }}>
         <div className="doc-preview"><FileText /></div>
@@ -49,7 +57,7 @@ export default async function DocumentDetailPage({ params }: { params: Promise<{
 
           <div style={{ display: 'flex', gap: 14, marginTop: 10 }}>
             <button className="button" style={{ background: 'var(--archive-ink)', color: 'var(--archive-paper)', border: 0, cursor: 'not-allowed', opacity: .7 }} disabled>
-              <Download /> Download (pending upload)
+              <Download /> {t(ui.common.downloadPending, locale)}
             </button>
           </div>
         </div>
@@ -62,7 +70,7 @@ export default async function DocumentDetailPage({ params }: { params: Promise<{
       )}
 
       <div style={{ maxWidth: 640 }}>
-        <h2 className="cb-heading">Suggested citation</h2>
+        <h2 className="cb-heading">{t(ui.common.suggestedCitation, locale)}</h2>
         <p className="citation-box" style={{ marginTop: 16 }}>
           {doc.author ?? 'Author unknown'}. <em>{doc.title}</em>. {doc.publisher ?? ''}{doc.year ? `, ${doc.year}` : ''}.
         </p>
@@ -70,7 +78,7 @@ export default async function DocumentDetailPage({ params }: { params: Promise<{
 
       {citingReferences.length > 0 && (
         <section style={{ marginTop: 60 }}>
-          <div className="feature-heading"><div><p className="eyebrow">Cited at these pages</p></div></div>
+          <div className="feature-heading"><div><p className="eyebrow">{t(ui.common.citedAtPages, locale)}</p></div></div>
           <div className="references-list">
             {citingReferences.map((ref) => (
               <div className="reference-row" key={ref.id}>
@@ -84,7 +92,7 @@ export default async function DocumentDetailPage({ params }: { params: Promise<{
 
       {articles.length > 0 && (
         <section style={{ marginTop: 70 }}>
-          <div className="feature-heading"><div><p className="eyebrow">Referenced by these articles</p></div></div>
+          <div className="feature-heading"><div><p className="eyebrow">{t(ui.common.citedByArticles, locale)}</p></div></div>
           <div className="directory-grid">{articles.map((a: any) => <ArticleCard key={a.id} locale={locale} article={a} />)}</div>
         </section>
       )}

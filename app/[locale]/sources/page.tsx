@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageShell, PageHeading } from '@/components/archive/PageShell'
 import { getDocuments } from '@/lib/content'
+import { isLocale, pageCopy, t, ui } from '@/lib/i18n'
 
 export const metadata: Metadata = { title: 'Sources | Patidar History', description: 'The five-tier source framework and major source categories used across this archive.' }
 
@@ -14,28 +15,34 @@ const TIERS = [
 ]
 
 export default async function SourcesPage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params
+  const { locale: rawLocale } = await params
+  const locale = isLocale(rawLocale) ? rawLocale : 'en'
   const documents = await getDocuments()
 
   return (
     <PageShell locale={locale}>
       <PageHeading
-        eyebrow="Working source categories"
-        title="Sources & references"
+        {...pageCopy('sources', locale)}
         intro="This framework prevents two opposite mistakes: treating every community tradition as proven history, and dismissing community memory merely because it is not an academic publication."
       />
 
+      {locale !== 'en' && (
+        <div className="cb-note evidence-open-question" style={{ marginBottom: 40, maxWidth: 730 }}>
+          <p style={{ margin: 0 }}>{t(ui.common.translationPendingGeneric, locale)}</p>
+        </div>
+      )}
+
       <div className="tier-list">
-        {TIERS.map((t) => (
-          <div className="tier-row" key={t.tier}>
-            <strong>Tier {t.tier}</strong>
-            <p><strong style={{ color: 'var(--archive-ink)' }}>{t.name}.</strong> {t.desc}</p>
+        {TIERS.map((tier) => (
+          <div className="tier-row" key={tier.tier}>
+            <strong>Tier {tier.tier}</strong>
+            <p><strong style={{ color: 'var(--archive-ink)' }}>{tier.name}.</strong> {tier.desc}</p>
           </div>
         ))}
       </div>
 
       <div style={{ marginTop: 70 }}>
-        <div className="feature-heading"><div><p className="eyebrow">Full source catalogue</p></div><Link className="text-link" href={`/${locale}/library`}>Browse the library</Link></div>
+        <div className="feature-heading"><div><p className="eyebrow">Full source catalogue</p></div><Link className="text-link" href={`/${locale}/library`}>{t(ui.common.viewAll, locale)}</Link></div>
         <div className="doc-grid">
           {documents.slice(0, 6).map((doc) => (
             <Link key={doc.id} className="doc-card" href={`/${locale}/library/${doc.slug}`}>

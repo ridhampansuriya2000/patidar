@@ -8,7 +8,7 @@ import { EvidenceBadge } from '@/components/archive/EvidenceBadge'
 import { ContentBlockRenderer } from '@/components/archive/ContentBlocks'
 import { ArticleCard } from '@/components/archive/Cards'
 import { getPersonBySlug, getArticleBySlug, getPlacesBySlugs, getTimelineByIds, getPeopleBySlugs, getReferencesByIds } from '@/lib/content'
-import { isLocale, localize, type Locale } from '@/lib/i18n'
+import { isLocale, localize, t, ui, type Locale } from '@/lib/i18n'
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params
@@ -31,10 +31,14 @@ export default async function PersonDetailPage({ params }: { params: Promise<{ l
     getReferencesByIds(person.referenceIds ?? []),
   ])
 
+  // Person.biography has no per-locale variant in this data model yet (unlike Article.contentI18n),
+  // so body text is always English regardless of nameI18n/shortDescriptionI18n being set.
+  const bioIsTranslated = locale === 'en'
+
   return (
     <PageShell locale={locale}>
       <div className="archive-heading" style={{ marginBottom: 0 }}>
-        <Breadcrumbs locale={locale} trail={[{ label: 'People', href: `/${locale}/people` }, { label: person.name }]} />
+        <Breadcrumbs locale={locale} trail={[{ label: t(ui.nav.people, locale), href: `/${locale}/people` }, { label: person.name }]} />
       </div>
 
       <div className="profile-hero">
@@ -54,11 +58,16 @@ export default async function PersonDetailPage({ params }: { params: Promise<{ l
 
       <div className="profile-layout">
         <div>
+          {!bioIsTranslated && (
+            <div className="cb-note evidence-open-question" style={{ marginBottom: 30 }}>
+              <p style={{ margin: 0 }}>{t(ui.common.translationPendingGeneric, locale)}</p>
+            </div>
+          )}
           <ContentBlockRenderer blocks={person.biography} locale={locale} references={references} />
 
           {references.length > 0 && (
             <div style={{ marginTop: 50 }}>
-              <h2 className="cb-heading">References</h2>
+              <h2 className="cb-heading">{t(ui.common.references, locale)}</h2>
               <div className="references-list" style={{ marginTop: 20 }}>
                 {references.map((ref, i) => (
                   <div className="reference-row" id={`ref-${ref.id}`} key={ref.id}>
@@ -74,7 +83,7 @@ export default async function PersonDetailPage({ params }: { params: Promise<{ l
         <aside className="profile-side">
           {timelineEvents.length > 0 && (
             <div>
-              <h3>Timeline</h3>
+              <h3>{t(ui.common.timeline, locale)}</h3>
               {timelineEvents.map((e) => (
                 <div key={e.id} style={{ padding: '10px 0', borderBottom: '1px solid var(--archive-line)' }}>
                   <span style={{ color: 'var(--archive-rust)', fontSize: 12, fontWeight: 700 }}>{e.year}</span>
@@ -85,7 +94,7 @@ export default async function PersonDetailPage({ params }: { params: Promise<{ l
           )}
           {places.length > 0 && (
             <div>
-              <h3>Related places</h3>
+              <h3>{t(ui.common.relatedPlaces, locale)}</h3>
               <div className="side-link-list">
                 {places.map((p) => (
                   <Link key={p.id} className="side-link-row" href={`/${locale}/places/${p.slug}`}>
@@ -97,7 +106,7 @@ export default async function PersonDetailPage({ params }: { params: Promise<{ l
           )}
           {relatedPeople.length > 0 && (
             <div>
-              <h3>Related people</h3>
+              <h3>{t(ui.common.relatedPeople, locale)}</h3>
               <div className="side-link-list">
                 {relatedPeople.map((p) => (
                   <Link key={p.id} className="side-link-row" href={`/${locale}/people/${p.slug}`}>
@@ -112,7 +121,7 @@ export default async function PersonDetailPage({ params }: { params: Promise<{ l
 
       {articles.length > 0 && (
         <section style={{ marginTop: 90 }}>
-          <div className="feature-heading"><div><p className="eyebrow">Related articles</p></div><Link className="text-link" href={`/${locale}/sections`}>All sections <ArrowUpRight /></Link></div>
+          <div className="feature-heading"><div><p className="eyebrow">{t(ui.common.relatedArticles, locale)}</p></div><Link className="text-link" href={`/${locale}/sections`}>{t(ui.common.viewAllSections, locale)} <ArrowUpRight /></Link></div>
           <div className="directory-grid">{articles.map((a: any) => <ArticleCard key={a.id} locale={locale} article={a} />)}</div>
         </section>
       )}

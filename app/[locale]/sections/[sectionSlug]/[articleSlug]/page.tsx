@@ -74,8 +74,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ locale
             <span className="meta-sep">·</span>
             <span><Clock style={{ width: 12, display: 'inline', verticalAlign: '-2px' }} /> {article.readingTime} {t(ui.common.minRead, locale)}</span>
             <div className="article-meta-actions">
-              <ShareButton />
-              <CopyLinkButton />
+              <ShareButton locale={locale} />
+              <CopyLinkButton locale={locale} />
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ locale
 
           <aside>
             <TableOfContents headings={headings} label={t(ui.common.tableOfContents, locale)} />
-            <FontSizeControl />
+            <FontSizeControl locale={locale} />
           </aside>
         </div>
       </article>

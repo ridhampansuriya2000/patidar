@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { Check, Link2, Minus, Plus, Share2 } from 'lucide-react'
+import { t, ui, type Locale } from '@/lib/i18n'
 
 export function ReadingProgress() {
   const [width, setWidth] = useState(0)
@@ -53,7 +54,7 @@ export function TableOfContents({ headings, label }: { headings: { id: string; t
   )
 }
 
-export function FontSizeControl() {
+export function FontSizeControl({ locale = 'en' }: { locale?: Locale }) {
   const [size, setSize] = useState(17)
   useEffect(() => {
     document.documentElement.style.setProperty('--article-font-size', `${size}px`)
@@ -61,14 +62,14 @@ export function FontSizeControl() {
   useEffect(() => () => { document.documentElement.style.removeProperty('--article-font-size') }, [])
   return (
     <div className="font-size-control">
-      <span>Text size</span>
+      <span>{t(ui.common.textSize, locale)}</span>
       <button type="button" onClick={() => setSize((s) => Math.max(14, s - 1))} aria-label="Decrease text size"><Minus size={12} /></button>
       <button type="button" onClick={() => setSize((s) => Math.min(21, s + 1))} aria-label="Increase text size"><Plus size={12} /></button>
     </div>
   )
 }
 
-export function ShareButton() {
+export function ShareButton({ locale = 'en' }: { locale?: Locale }) {
   const [copied, setCopied] = useState(false)
   async function share() {
     const url = window.location.href
@@ -83,12 +84,12 @@ export function ShareButton() {
   }
   return (
     <button type="button" onClick={share} aria-label="Share this article">
-      {copied ? <Check /> : <Share2 />} {copied ? 'Copied' : 'Share'}
+      {copied ? <Check /> : <Share2 />} {copied ? t(ui.common.copied, locale) : t(ui.common.share, locale)}
     </button>
   )
 }
 
-export function CopyLinkButton() {
+export function CopyLinkButton({ locale = 'en' }: { locale?: Locale }) {
   const [copied, setCopied] = useState(false)
   async function copy() {
     try {
@@ -99,7 +100,7 @@ export function CopyLinkButton() {
   }
   return (
     <button type="button" onClick={copy} aria-label="Copy link">
-      {copied ? <Check /> : <Link2 />} {copied ? 'Copied' : 'Copy link'}
+      {copied ? <Check /> : <Link2 />} {copied ? t(ui.common.copied, locale) : t(ui.common.copyLink, locale)}
     </button>
   )
 }

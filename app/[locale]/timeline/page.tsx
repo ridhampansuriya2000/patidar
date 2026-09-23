@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { PageShell, PageHeading } from '@/components/archive/PageShell'
 import { TimelineExplorer } from '@/components/archive/TimelineExplorer'
 import { getTimeline } from '@/lib/content'
+import { isLocale, pageCopy } from '@/lib/i18n'
 
 export const metadata: Metadata = { title: 'Timeline | Patidar History', description: 'An interactive chronology from pre-1800 Gujarat to the present day.' }
 
@@ -10,11 +11,7 @@ export default async function TimelinePage({ params }: { params: Promise<{ local
   const events = await getTimeline()
   return (
     <PageShell locale={locale}>
-      <PageHeading
-        eyebrow="A chronology of change"
-        title="Timeline"
-        intro="From pre-1800 agricultural settlement to the present day, filtered by theme. Each entry carries the evidence label used throughout this archive."
-      />
+      <PageHeading {...pageCopy('timeline', isLocale(locale) ? locale : 'en')} />
       <TimelineExplorer events={events} />
     </PageShell>
   )
